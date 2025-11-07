@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/infoText"
+            android:layout_width="match_parent"
+            android:layout_height="291dp"
+            android:paddingBottom="16dp"
+            android:text="System info loading..."
+            android:textSize="16sp" />
+
+        <!-- 基础信息操作 -->
+        <Button android:id="@+id/btnRefresh" android:text="🔄 刷新系统信息"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+<!-- 无线 -->
+        <!-- WiFi切换 -->
+        <Button android:id="@+id/btnToggleWifi" android:text="📶 切换 WiFi 开关"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <!-- 蓝牙切换 -->
+        <Button android:id="@+id/btnToggleBluetooth" android:text="🟦 切换 蓝牙 开关"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        
+        <!-- NFC切换 -->
+        <Button android:id="@+id/btnToggleNFC" android:text="📳 切换 NFC 开关"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <!-- 移动数据切换 -->
+        <Button android:id="@+id/btnToggleMobile" android:text="📶 切换移动数据开关"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+<!-- 屏幕 -->
+        <!-- 设置屏幕自动关闭时间 -->
+         <Button android:id="@+id/btnSetTimeout" android:text="🕒 设置屏幕自动关闭为 30 秒"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <!-- 屏幕亮暗切换 -->
+        <Button android:id="@+id/btnToggleScreenOnOff" android:text="📱 切换屏幕开关"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <!-- 增加/降低亮度 -->
+        <Button android:id="@+id/btnBrightnessUp" android:text="☀️ 增加亮度"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <Button android:id="@+id/btnBrightnessDown" android:text="🌙 降低亮度"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <!-- 屏幕刷新率 -->
+        <Button android:id="@+id/btnSetRefreshRate" android:text="🔄 设置屏幕刷新率为 30Hz"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+<!-- 传感器 -->
+        <!-- 自动旋转切换 -->
+        <Button android:id="@+id/btnToggleAutoRotate" android:text="🔄 切换自动旋转开关"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <Button android:id="@+id/btnGps" android:text="📍 切换 GPS"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+
+<!-- 音量 -->
+        <!-- 静音切换 -->
+        <Button android:id="@+id/btnToggleVolumeMute" android:text="🔇 切换静音开关"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <!-- 修改媒体音量 -->
+        <Button android:id="@+id/btnSetMediaVolume" android:text="🔊 设置媒体音量为 50"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <!-- 铃声音量 -->
+        <Button android:id="@+id/btnSetRingVolume" android:text="🔔 设置铃声音量为 50"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <!-- 闹钟音量 -->
+        <Button android:id="@+id/btnSetAlarmVolume" android:text="⏰ 设置闹钟音量为 50"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <!-- 通知音量 -->
+        <Button android:id="@+id/btnSetNotificationVolume" android:text="🔔 设置通知音量为 50"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+
+<!-- CPU GPU SOC -->
+        <Button android:id="@+id/btnCpuLimit" android:text="⚙️ 设置 CPU0 频率为 1.2GHz (root)"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <Button android:id="@+id/btnOfflineCpu4" android:text="🧠 关闭 CPU4 核心 (root)"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>
