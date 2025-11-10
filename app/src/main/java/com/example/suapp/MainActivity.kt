@@ -48,21 +48,13 @@ class MainActivity : AppCompatActivity() {
         val btnSetAlarmVolume: Button = findViewById(R.id.btnSetAlarmVolume)
         val btnSetNotificationVolume: Button = findViewById(R.id.btnSetNotificationVolume)
 
+        // ==== CPU ====
+        val btnSwitchCpu4: Button = findViewById(R.id.btnSwitchCpu4)
+        val btnSwitchCpu4PowerSave: Button = findViewById(R.id.btnSwitchCpu4PowerSave)
+
         // ==== 其他 ====
         val btnCpuLimit: Button = findViewById(R.id.btnCpuLimit)
-        val btnOfflineCpu4: Button = findViewById(R.id.btnOfflineCpu4)
 
-        // 检查WRITE_SETTINGS权限
-        if (!Settings.System.canWrite(this)) {
-            Toast.makeText(this, "请授权修改系统设置权限", Toast.LENGTH_LONG).show()
-            val intent = Intent(Settings.ACTION_MANAGE_WRITE_SETTINGS)
-            intent.data = Uri.parse("package:$packageName")
-            startActivity(intent)
-        }
-
-        // 刷新显示
-        refreshSystemInfo()
-        print2console()
 
     /** 设置按钮点击事件 **/
         // 基础
@@ -92,12 +84,26 @@ class MainActivity : AppCompatActivity() {
         btnSetAlarmVolume.setOnClickListener { setAlarmVolume() }
         btnSetNotificationVolume.setOnClickListener { setNotificationVolume() }
 
+        // ==== CPU ====
+        btnSwitchCpu4.setOnClickListener { switchCpu4() }
+        btnSwitchCpu4PowerSave.setOnClickListener { switchCpu4Mode() }
+        
         // ==== 其他 ====
-        btnCpuLimit.setOnClickListener { limitCpu() }
-        btnOfflineCpu4.setOnClickListener { offlineCpu4() }
+        btnCpuLimit.setOnClickListener { fixCpu4Frequency() }
+
+        
+        // 检查WRITE_SETTINGS权限
+        if (!Settings.System.canWrite(this)) {
+            Toast.makeText(this, "请授权修改系统设置权限", Toast.LENGTH_LONG).show()
+            val intent = Intent(Settings.ACTION_MANAGE_WRITE_SETTINGS)
+            intent.data = Uri.parse("package:$packageName")
+            startActivity(intent)
+        }
+
+        // 刷新显示
+        refreshSystemInfo()
+        print2console()
     }
-
-
 
     private fun print2console() {
         println(
@@ -242,28 +248,50 @@ class MainActivity : AppCompatActivity() {
         Executor.setAudio(this, 5, 5)  // range 0 to 16
     }
 
-// =================
-    private fun limitCpu() {
-        Thread {
-            Executor.setCpuFrequency(0, 1200000)
-            runOnUiThread {
-                Toast.makeText(this, "已设置 CPU0 频率为 1.2GHz (root)", Toast.LENGTH_SHORT).show()
-                refreshSystemInfo()
-            }
-        }.start()
+/** CPU **/
+    private fun switchCpu4() {
+        if (!InfoHelper.isCpuCoreExists(4)) {
+            Toast.makeText(this, "CPU4 核心不存在", Toast.LENGTH_SHORT).show()
+            return
+        }
+
+        val isOnline = InfoHelper.isCpuCoreOnline(4)
+        val order = if(isOnline){
+            0
+        } else {
+            1
+        }
+        Executor.setCpuCoreOnline(this, 4, order)
     }
 
+    private fun switchCpu4Mode() {
+        if (!InfoHelper.isCpuCoreExists(4)) {
+            Toast.makeText(this, "CPU4 核心不存在", Toast.LENGTH_SHORT).show()
+            return
+        }
 
-
-    private fun offlineCpu4() {
-        Thread {
-            Executor.setCpuCoreOnline(4, false)
-            runOnUiThread {
-                Toast.makeText(this, "CPU4 已关闭 (root)", Toast.LENGTH_SHORT).show()
-                refreshSystemInfo()
-            }
-        }.start()
+        val mode = InfoHelper.getCpuGovernor(4)
+        val order = when (mode) {
+            "powersave" -> "uag"
+            "uag" -> "powersave"
+            else -> "uag"
+        }
+        println("Current CPU4 governor: $mode, switching to $order")
+        Executor.setCpuGovernor(this, 4, order)
     }
+
+    @Deprecated(message = "不支持 governor = userspace")
+    private fun fixCpu4Frequency() {
+        val isExists = InfoHelper.isCpuCoreExists(4)
+        if (!isExists) {
+            Toast.makeText(this, "CPU4 核心不存在", Toast.LENGTH_SHORT).show()
+            return
+        }
+        
+        Executor.fixCpuFrequency(this, 4, 1200000) // 1.2GHz
+    }
+
+// ================= 
 
     private fun adjustBrightness(delta: Int) {
         var current = InfoHelper.getScreenBrightness(this)

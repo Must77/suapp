@@ -69,6 +69,7 @@
 <!-- 音量 -->
         <!-- 静音切换 -->
         <Button android:id="@+id/btnToggleVolumeMute" android:text="🔇 切换静音开关"
+            android:enabled="false"
             android:layout_width="match_parent" android:layout_height="wrap_content"/>
 
         <!-- 修改媒体音量 -->
@@ -89,10 +90,17 @@
 
 
 <!-- CPU GPU SOC -->
-        <Button android:id="@+id/btnCpuLimit" android:text="⚙️ 设置 CPU0 频率为 1.2GHz (root)"
+        <!-- 设置CPU4频率 -->    
+        <Button android:id="@+id/btnCpuLimit" android:text="⚙️ 设置 CPU0 频率为 1.2GHz "
+            android:enabled="false"
             android:layout_width="match_parent" android:layout_height="wrap_content"/>
 
-        <Button android:id="@+id/btnOfflineCpu4" android:text="🧠 关闭 CPU4 核心 (root)"
+        <!-- 启停CPU4 -->
+        <Button android:id="@+id/btnSwitchCpu4" android:text="🧠 启停 CPU4 核心 "
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <!-- 切换CPU4为省电模式 -->
+        <Button android:id="@+id/btnSwitchCpu4PowerSave" android:text="🧠 切换 CPU4 省电模式"
             android:layout_width="match_parent" android:layout_height="wrap_content"/>
 
     </LinearLayout>

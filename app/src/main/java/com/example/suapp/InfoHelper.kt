@@ -114,6 +114,21 @@ object InfoHelper {
         return audioManager.getStreamVolume(android.media.AudioManager.STREAM_NOTIFICATION)
     }
 
+/** CPU **/
+    fun isCpuCoreExists(cpuIndex: Int): Boolean {
+        return File("/sys/devices/system/cpu/cpu$cpuIndex").exists()
+    }
+
+    fun isCpuCoreOnline(cpuIndex: Int): Boolean {
+        val cpufile = File("/sys/devices/system/cpu/cpu$cpuIndex/online")
+        return cpufile.readText().trim() == "1"
+    }
+
+    fun getCpuGovernor(cpuIndex: Int): String {
+        val govFile = File("/sys/devices/system/cpu/cpu$cpuIndex/cpufreq/scaling_governor")
+        return govFile.readText().trim()
+    }
+
 /// ====待修改=====
     fun getCpuFrequencies(): String {
         val sb = StringBuilder()

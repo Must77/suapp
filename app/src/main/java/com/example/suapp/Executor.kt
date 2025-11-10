@@ -112,16 +112,32 @@ object Executor {
         val exitCode = process.waitFor()
     }
 
+/** CPU **/
+    fun setCpuCoreOnline(context: Context, cpuIndex: Int, order: Int) {
+        println("setCpuCoreOnline: cpuIndex=$cpuIndex, order=$order")
+        val command = "echo $order | su -c tee /sys/devices/system/cpu/cpu$cpuIndex/online"
+        println("Command: $command")
+        val process = Runtime.getRuntime().exec(command)
+        val exitCode = process.waitFor()
+    }
+
+    fun fixCpuFrequency(context: Context, cpuIndex: Int, frequency: Int) {
+        // command设定governer为userspace
+        // comand1设定scaling_setspeed为1.2GHz
+        val command = ""
+        val process = Runtime.getRuntime().exec(command)
+        val exitCode = process.waitFor()
+    }
+
+    fun setCpuGovernor(context: Context, cpuIndex: Int, order: String) {
+        println("setCpuGovernor: cpuIndex=$cpuIndex, order=$order")
+        val command = "echo $order | su -c tee /sys/devices/system/cpu/cpu$cpuIndex/cpufreq/scaling_governor"
+        val process = Runtime.getRuntime().exec(command)
+        val exitCode = process.waitFor()
+    }
+
+
 // ======待修改=====
-    fun setCpuFrequency(cpuIndex: Int, freqKHz: Int) {
-        execRoot("echo $freqKHz > /sys/devices/system/cpu/cpu$cpuIndex/cpufreq/scaling_setspeed")
-    }
-
-    fun setCpuCoreOnline(cpuIndex: Int, online: Boolean) {
-        val value = if (online) "1" else "0"
-        execRoot("echo $value > /sys/devices/system/cpu/cpu$cpuIndex/online")
-    }
-
     private fun execRoot(cmd: String) {
         try {
             val process = Runtime.getRuntime().exec("su")
