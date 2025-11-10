@@ -114,9 +114,7 @@ object Executor {
 
 /** CPU **/
     fun setCpuCoreOnline(context: Context, cpuIndex: Int, order: Int) {
-        println("setCpuCoreOnline: cpuIndex=$cpuIndex, order=$order")
-        val command = "echo $order | su -c tee /sys/devices/system/cpu/cpu$cpuIndex/online"
-        println("Command: $command")
+        val command = arrayOf("su", "-c", "echo $order > /sys/devices/system/cpu/cpu$cpuIndex/online")
         val process = Runtime.getRuntime().exec(command)
         val exitCode = process.waitFor()
     }
@@ -131,7 +129,7 @@ object Executor {
 
     fun setCpuGovernor(context: Context, cpuIndex: Int, order: String) {
         println("setCpuGovernor: cpuIndex=$cpuIndex, order=$order")
-        val command = "echo $order | su -c tee /sys/devices/system/cpu/cpu$cpuIndex/cpufreq/scaling_governor"
+        val command = arrayOf("su", "-c", "echo $order > /sys/devices/system/cpu/cpu$cpuIndex/cpufreq/scaling_governor")
         val process = Runtime.getRuntime().exec(command)
         val exitCode = process.waitFor()
     }
