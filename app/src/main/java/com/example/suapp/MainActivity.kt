@@ -220,6 +220,11 @@ class MainActivity : AppCompatActivity() {
         Executor.setGPSMode(this, order) // range 0 to 3
     }
 
+    private fun setGnssRate() {
+        val rate = InfoHelper.getGnssRate(this)
+        Executor.setGnssRate(this, 1000) // milliseconds
+    }
+
 
 /** 音量 **/
     private fun switchVolumeMute() {
@@ -276,7 +281,6 @@ class MainActivity : AppCompatActivity() {
             "uag" -> "powersave"
             else -> "uag"
         }
-        println("Current CPU4 governor: $mode, switching to $order")
         Executor.setCpuGovernor(this, 4, order)
     }
 
@@ -308,7 +312,9 @@ class MainActivity : AppCompatActivity() {
             info.append("📶 WiFi: ${InfoHelper.isWifiEnabled(this)}\n")
             info.append("🟦 蓝牙: ${InfoHelper.isBluetoothEnabled(this)}\n")
             info.append("⚙️ CPU 频率:\n${InfoHelper.getCpuFrequencies()}\n")
-
+            info.append("📍 GNSS 刷新率: ${InfoHelper.getGnssRate(this)} ms\n")
+            info.append("🔄 屏幕刷新率: ${InfoHelper.getScreenRefreshRate(this)} Hz\n")
+            info.append("> 最近的程序:\n${InfoHelper.getRecentAppsRaw()}\n")
             runOnUiThread { infoText.text = info.toString() }
         }.start()
     }

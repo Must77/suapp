@@ -6,7 +6,9 @@ import android.content.Context
 import android.net.wifi.WifiManager
 import android.nfc.NfcManager
 import android.provider.Settings
+import java.io.BufferedReader
 import java.io.File
+import java.io.InputStreamReader
 
 object InfoHelper {
 
@@ -81,6 +83,14 @@ object InfoHelper {
         }
     }
 
+    fun getGnssRate(context: Context): Int {
+        return try {
+            Settings.Global.getInt(context.contentResolver, "gnss_measurement_rate")
+        } catch (e: Exception) {
+            -1
+        }
+    }
+
     fun getScreenRefreshRate(context: Context): Float {
         val windowManager = context.getSystemService(Context.WINDOW_SERVICE) as android.view.WindowManager
         val display = windowManager.defaultDisplay
@@ -129,7 +139,6 @@ object InfoHelper {
         return govFile.readText().trim()
     }
 
-/// ====待修改=====
     fun getCpuFrequencies(): String {
         val sb = StringBuilder()
         for (i in 0..7) {
@@ -145,5 +154,27 @@ object InfoHelper {
             }
         }
         return sb.toString()
+    }
+
+/** 前台后台程序 **/
+    fun getRecentAppsRaw(): String {
+        return try {
+            val command = arrayOf("su", "-c", "dumpsys activity recents | grep 'Recent #'")
+            val process = Runtime.getRuntime().exec(command)
+            val reader = BufferedReader(InputStreamReader(process.inputStream))
+            
+            val result = StringBuilder()
+            var line: String?
+            while (reader.readLine().also { line = it } != null) {
+                result.append(line).append("\n")
+            }
+            reader.close()
+            process.waitFor()
+            
+            result.toString()
+        } catch (e: Exception) {
+            e.printStackTrace()
+            "获取最近程序失败: ${e.message}"
+        }
     }
 }

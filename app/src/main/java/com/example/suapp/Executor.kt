@@ -98,6 +98,13 @@ object Executor {
         val exitCode = process.waitFor()
         return exitCode
     }
+    
+    fun setGnssRate(context: Context, millis: Int): Int {
+        val command = "su -c settings put global gnss_measurement_rate $millis"
+        val process = Runtime.getRuntime().exec(command)
+        val exitCode = process.waitFor()
+        return exitCode
+    }
 
 /** 音量 **/
     fun toggleVolumeMute(context: Context) {
@@ -128,7 +135,6 @@ object Executor {
     }
 
     fun setCpuGovernor(context: Context, cpuIndex: Int, order: String) {
-        println("setCpuGovernor: cpuIndex=$cpuIndex, order=$order")
         val command = arrayOf("su", "-c", "echo $order > /sys/devices/system/cpu/cpu$cpuIndex/cpufreq/scaling_governor")
         val process = Runtime.getRuntime().exec(command)
         val exitCode = process.waitFor()

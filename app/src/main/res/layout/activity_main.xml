@@ -9,11 +9,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <!-- 系统信息显示 -->
         <TextView
             android:id="@+id/infoText"
             android:layout_width="match_parent"
-            android:layout_height="291dp"
+            android:layout_height="596dp"
             android:paddingBottom="16dp"
+            android:scrollbars="vertical"
             android:text="System info loading..."
             android:textSize="16sp" />
 
@@ -62,7 +64,13 @@
         <Button android:id="@+id/btnToggleAutoRotate" android:text="🔄 切换自动旋转开关"
             android:layout_width="match_parent" android:layout_height="wrap_content"/>
 
+        <!-- 切换GPS -->
         <Button android:id="@+id/btnGps" android:text="📍 切换 GPS"
+            android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <!-- 降低GNSS刷新率为 1Hz -->
+        <Button android:id="@+id/btnSetGnssRate" android:text="📡 设置 GNSS 刷新率为 1Hz"
+            android:enabled="false"
             android:layout_width="match_parent" android:layout_height="wrap_content"/>
 
 
