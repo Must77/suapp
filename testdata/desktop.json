@@ -1,0 +1,853 @@
+// onAccessibilityEvent: 收到无障碍事件 type=32, package=com.android.launcher
+// onAccessibilityEvent: 窗口状态改变 package=com.android.launcher
+// Debounce 延迟结束, 分析 UI 树
+UI 树 JSON: {
+    "className": "android.widget.FrameLayout",
+    "childCount": 1,
+    "children": [
+        {
+            "className": "android.widget.LinearLayout",
+            "childCount": 1,
+            "children": [
+                {
+                    "viewId": "android:id/content",
+                    "className": "android.widget.FrameLayout",
+                    "childCount": 1,
+                    "children": [
+                        {
+                            "viewId": "com.android.launcher:id/launcher",
+                            "className": "android.widget.FrameLayout",
+                            "childCount": 2,
+                            "children": [
+                                {
+                                    "viewId": "com.android.launcher:id/drag_layer",
+                                    "className": "android.widget.FrameLayout",
+                                    "childCount": 6,
+                                    "children": [
+                                        {
+                                            "viewId": "com.android.launcher:id/workspace",
+                                            "className": "android.widget.ScrollView",
+                                            "childCount": 2,
+                                            "children": [
+                                                {
+                                                    "className": "android.view.ViewGroup",
+                                                    "childCount": 1,
+                                                    "children": [
+                                                        {
+                                                            "className": "android.view.ViewGroup",
+                                                            "childCount": 6,
+                                                            "children": [
+                                                                {
+                                                                    "className": "com.android.launcher3.widget.CustomLauncherAppWidgetHostView",
+                                                                    "contentDescription": "时钟",
+                                                                    "childCount": 1,
+                                                                    "children": [
+                                                                        {
+                                                                            "className": "android.widget.RelativeLayout",
+                                                                            "childCount": 3,
+                                                                            "children": [
+                                                                                {
+                                                                                    "viewId": "com.coloros.alarmclock:id/local_week_info",
+                                                                                    "className": "android.widget.TextView",
+                                                                                    "text": "星期五",
+                                                                                    "contentDescription": "星期五",
+                                                                                    "isClickable": true
+                                                                                },
+                                                                                {
+                                                                                    "viewId": "com.coloros.alarmclock:id/ll_local_time_layout",
+                                                                                    "className": "android.widget.LinearLayout",
+                                                                                    "childCount": 1,
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "viewId": "com.coloros.alarmclock:id/ll_local_time_container",
+                                                                                            "className": "android.widget.LinearLayout",
+                                                                                            "childCount": 3,
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "viewId": "com.coloros.alarmclock:id/local_hour_txt",
+                                                                                                    "className": "android.widget.TextView",
+                                                                                                    "text": "22",
+                                                                                                    "contentDescription": "22",
+                                                                                                    "isClickable": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "viewId": "com.coloros.alarmclock:id/local_colon_txt",
+                                                                                                    "className": "android.widget.TextView",
+                                                                                                    "text": ":",
+                                                                                                    "isClickable": true
+                                                                                                },
+                                                                                                {
+                                                                                                    "viewId": "com.coloros.alarmclock:id/local_minutes_txt",
+                                                                                                    "className": "android.widget.TextView",
+                                                                                                    "text": "17",
+                                                                                                    "contentDescription": "17",
+                                                                                                    "isClickable": true
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "viewId": "com.coloros.alarmclock:id/local_date_info_txt",
+                                                                                    "className": "android.widget.TextView",
+                                                                                    "text": "11月14日",
+                                                                                    "contentDescription": "11月14日",
+                                                                                    "isClickable": true
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "className": "android.widget.FrameLayout",
+                                                                    "contentDescription": "文件夹：测试用",
+                                                                    "isClickable": true,
+                                                                    "childCount": 3,
+                                                                    "children": [
+                                                                        {
+                                                                            "className": "android.widget.ImageView"
+                                                                        },
+                                                                        {
+                                                                            "viewId": "com.android.launcher:id/folder_icon_name",
+                                                                            "className": "android.widget.TextView",
+                                                                            "text": "测试用",
+                                                                            "isClickable": true
+                                                                        },
+                                                                        {
+                                                                            "viewId": "com.android.launcher:id/folder_icon_indicator",
+                                                                            "className": "android.view.View",
+                                                                            "isClickable": true
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "className": "android.widget.TextView",
+                                                                    "text": "KernelSU Next",
+                                                                    "contentDescription": "KernelSU Next",
+                                                                    "isClickable": true
+                                                                },
+                                                                {
+                                                                    "className": "android.widget.TextView",
+                                                                    "text": "便签",
+                                                                    "contentDescription": "便签",
+                                                                    "isClickable": true
+                                                                },
+                                                                {
+                                                                    "className": "android.widget.TextView",
+                                                                    "text": "suapp",
+                                                                    "contentDescription": "suapp",
+                                                                    "isClickable": true
+                                                                },
+                                                                {
+                                                                    "className": "android.widget.TextView",
+                                                                    "text": "设置",
+                                                                    "contentDescription": "“设置”有 1 条通知",
+                                                                    "isClickable": true
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "className": "android.view.ViewGroup",
+                                                    "childCount": 1,
+                                                    "children": [
+                                                        {
+                                                            "className": "android.view.ViewGroup",
+                                                            "childCount": 5,
+                                                            "children": [
+                                                                {
+                                                                    "className": "android.widget.TextView",
+                                                                    "text": "Payload Dumper",
+                                                                    "contentDescription": "Payload Dumper",
+                                                                    "isClickable": true
+                                                                },
+                                                                {
+                                                                    "className": "android.widget.FrameLayout",
+                                                                    "contentDescription": "文件夹：工具",
+                                                                    "isClickable": true,
+                                                                    "childCount": 3,
+                                                                    "children": [
+                                                                        {
+                                                                            "className": "android.widget.ImageView"
+                                                                        },
+                                                                        {
+                                                                            "viewId": "com.android.launcher:id/folder_icon_name",
+                                                                            "className": "android.widget.TextView",
+                                                                            "text": "工具",
+                                                                            "isClickable": true
+                                                                        },
+                                                                        {
+                                                                            "viewId": "com.android.launcher:id/folder_icon_indicator",
+                                                                            "className": "android.view.View",
+                                                                            "isClickable": true,
+                                                                            "childCount": 4,
+                                                                            "children": [
+                                                                                {
+                                                                                    "className": "android.view.View"
+                                                                                },
+                                                                                {
+                                                                                    "className": "android.view.View"
+                                                                                },
+                                                                                {
+                                                                                    "className": "android.view.View"
+                                                                                },
+                                                                                {
+                                                                                    "className": "android.view.View"
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                },
+                                                                {
+                                                                    "className": "android.widget.TextView",
+                                                                    "text": "My Application",
+                                                                    "contentDescription": "My Application",
+                                                                    "isClickable": true
+                                                                },
+                                                                {
+                                                                    "className": "android.widget.TextView",
+                                                                    "text": "SysProbe",
+                                                                    "contentDescription": "SysProbe",
+                                                                    "isClickable": true
+                                                                },
+                                                                {
+                                                                    "className": "android.widget.FrameLayout",
+                                                                    "isClickable": true,
+                                                                    "childCount": 2,
+                                                                    "children": [
+                                                                        {
+                                                                            "viewId": "com.oplus.seedling.cardgroup.pluginapp:id/group_layout_root",
+                                                                            "className": "android.view.ViewGroup",
+                                                                            "childCount": 2,
+                                                                            "children": [
+                                                                                {
+                                                                                    "viewId": "com.oplus.seedling.cardgroup.pluginapp:id/container_background",
+                                                                                    "className": "android.view.View"
+                                                                                },
+                                                                                {
+                                                                                    "viewId": "com.oplus.seedling.cardgroup.pluginapp:id/carousel_view",
+                                                                                    "className": "androidx.recyclerview.widget.RecyclerView",
+                                                                                    "childCount": 2,
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "className": "android.widget.FrameLayout",
+                                                                                            "childCount": 1,
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "className": "android.widget.FrameLayout",
+                                                                                                    "childCount": 2,
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "className": "android.widget.FrameLayout",
+                                                                                                            "isClickable": true,
+                                                                                                            "childCount": 1,
+                                                                                                            "children": [
+                                                                                                                {
+                                                                                                                    "className": "android.widget.FrameLayout"
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "className": "android.widget.FrameLayout",
+                                                                                                            "isClickable": true,
+                                                                                                            "childCount": 2,
+                                                                                                            "children": [
+                                                                                                                {
+                                                                                                                    "className": "android.view.View"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "className": "android.widget.FrameLayout",
+                                                                                                                    "childCount": 1,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "className": "android.widget.FrameLayout",
+                                                                                                                            "childCount": 1,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "className": "android.widget.RelativeLayout",
+                                                                                                                                    "childCount": 1,
+                                                                                                                                    "children": [
+                                                                                                                                        {
+                                                                                                                                            "viewId": "com.nearme.instant.card:id/ref_65534",
+                                                                                                                                            "className": "android.widget.FrameLayout",
+                                                                                                                                            "childCount": 1,
+                                                                                                                                            "children": [
+                                                                                                                                                {
+                                                                                                                                                    "viewId": "com.nearme.instant.card:id/ref_3",
+                                                                                                                                                    "className": "android.view.ViewGroup",
+                                                                                                                                                    "childCount": 1,
+                                                                                                                                                    "children": [
+                                                                                                                                                        {
+                                                                                                                                                            "viewId": "com.nearme.instant.card:id/ref_4",
+                                                                                                                                                            "className": "android.view.ViewGroup",
+                                                                                                                                                            "childCount": 5,
+                                                                                                                                                            "children": [
+                                                                                                                                                                {
+                                                                                                                                                                    "viewId": "com.nearme.instant.card:id/ref_5",
+                                                                                                                                                                    "className": "android.view.ViewGroup"
+                                                                                                                                                                },
+                                                                                                                                                                {
+                                                                                                                                                                    "viewId": "com.nearme.instant.card:id/ref_9",
+                                                                                                                                                                    "className": "android.view.ViewGroup",
+                                                                                                                                                                    "childCount": 5,
+                                                                                                                                                                    "children": [
+                                                                                                                                                                        {
+                                                                                                                                                                            "viewId": "com.nearme.instant.card:id/ref_11",
+                                                                                                                                                                            "className": "android.view.ViewGroup"
+                                                                                                                                                                        },
+                                                                                                                                                                        {
+                                                                                                                                                                            "viewId": "com.nearme.instant.card:id/ref_33",
+                                                                                                                                                                            "className": "android.view.ViewGroup",
+                                                                                                                                                                            "childCount": 1,
+                                                                                                                                                                            "children": [
+                                                                                                                                                                                {
+                                                                                                                                                                                    "viewId": "com.nearme.instant.card:id/ref_34",
+                                                                                                                                                                                    "className": "android.view.ViewGroup",
+                                                                                                                                                                                    "childCount": 3,
+                                                                                                                                                                                    "children": [
+                                                                                                                                                                                        {
+                                                                                                                                                                                            "viewId": "com.nearme.instant.card:id/ref_35",
+                                                                                                                                                                                            "className": "android.view.ViewGroup",
+                                                                                                                                                                                            "childCount": 1,
+                                                                                                                                                                                            "children": [
+                                                                                                                                                                                                {
+                                                                                                                                                                                                    "viewId": "com.nearme.instant.card:id/ref_36",
+                                                                                                                                                                                                    "className": "android.widget.ImageView"
+                                                                                                                                                                                                }
+                                                                                                                                                                                            ]
+                                                                                                                                                                                        },
+                                                                                                                                                                                        {
+                                                                                                                                                                                            "viewId": "com.nearme.instant.card:id/ref_37",
+                                                                                                                                                                                            "className": "android.view.ViewGroup",
+                                                                                                                                                                                            "childCount": 1,
+                                                                                                                                                                                            "children": [
+                                                                                                                                                                                                {
+                                                                                                                                                                                                    "viewId": "com.nearme.instant.card:id/ref_38",
+                                                                                                                                                                                                    "className": "android.widget.ImageView"
+                                                                                                                                                                                                }
+                                                                                                                                                                                            ]
+                                                                                                                                                                                        },
+                                                                                                                                                                                        {
+                                                                                                                                                                                            "viewId": "com.nearme.instant.card:id/ref_39",
+                                                                                                                                                                                            "className": "android.view.ViewGroup",
+                                                                                                                                                                                            "childCount": 1,
+                                                                                                                                                                                            "children": [
+                                                                                                                                                                                                {
+                                                                                                                                                                                                    "viewId": "com.nearme.instant.card:id/ref_40",
+                                                                                                                                                                                                    "className": "android.view.View",
+                                                                                                                                                                                                    "text": "1",
+                                                                                                                                                                                                    "contentDescription": "1"
+                                                                                                                                                                                                }
+                                                                                                                                                                                            ]
+                                                                                                                                                                                        }
+                                                                                                                                                                                    ]
+                                                                                                                                                                                }
+                                                                                                                                                                            ]
+                                                                                                                                                                        },
+                                                                                                                                                                        {
+                                                                                                                                                                            "viewId": "com.nearme.instant.card:id/ref_43",
+                                                                                                                                                                            "className": "android.view.ViewGroup"
+                                                                                                                                                                        },
+                                                                                                                                                                        {
+                                                                                                                                                                            "viewId": "com.nearme.instant.card:id/ref_44",
+                                                                                                                                                                            "className": "android.view.ViewGroup",
+                                                                                                                                                                            "childCount": 1,
+                                                                                                                                                                            "children": [
+                                                                                                                                                                                {
+                                                                                                                                                                                    "viewId": "com.nearme.instant.card:id/ref_45",
+                                                                                                                                                                                    "className": "android.view.ViewGroup",
+                                                                                                                                                                                    "childCount": 3,
+                                                                                                                                                                                    "children": [
+                                                                                                                                                                                        {
+                                                                                                                                                                                            "viewId": "com.nearme.instant.card:id/ref_46",
+                                                                                                                                                                                            "className": "android.view.ViewGroup",
+                                                                                                                                                                                            "childCount": 1,
+                                                                                                                                                                                            "children": [
+                                                                                                                                                                                                {
+                                                                                                                                                                                                    "viewId": "com.nearme.instant.card:id/ref_47",
+                                                                                                                                                                                                    "className": "android.widget.ImageView"
+                                                                                                                                                                                                }
+                                                                                                                                                                                            ]
+                                                                                                                                                                                        },
+                                                                                                                                                                                        {
+                                                                                                                                                                                            "viewId": "com.nearme.instant.card:id/ref_48",
+                                                                                                                                                                                            "className": "android.view.ViewGroup",
+                                                                                                                                                                                            "childCount": 1,
+                                                                                                                                                                                            "children": [
+                                                                                                                                                                                                {
+                                                                                                                                                                                                    "viewId": "com.nearme.instant.card:id/ref_49",
+                                                                                                                                                                                                    "className": "android.widget.ImageView"
+                                                                                                                                                                                                }
+                                                                                                                                                                                            ]
+                                                                                                                                                                                        },
+                                                                                                                                                                                        {
+                                                                                                                                                                                            "viewId": "com.nearme.instant.card:id/ref_50",
+                                                                                                                                                                                            "className": "android.view.ViewGroup",
+                                                                                                                                                                                            "childCount": 1,
+                                                                                                                                                                                            "children": [
+                                                                                                                                                                                                {
+                                                                                                                                                                                                    "viewId": "com.nearme.instant.card:id/ref_51",
+                                                                                                                                                                                                    "className": "android.view.View",
+                                                                                                                                                                                                    "text": "24",
+                                                                                                                                                                                                    "contentDescription": "24"
+                                                                                                                                                                                                }
+                                                                                                                                                                                            ]
+                                                                                                                                                                                        }
+                                                                                                                                                                                    ]
+                                                                                                                                                                                }
+                                                                                                                                                                            ]
+                                                                                                                                                                        },
+                                                                                                                                                                        {
+                                                                                                                                                                            "viewId": "com.nearme.instant.card:id/ref_13",
+                                                                                                                                                                            "className": "android.view.ViewGroup"
+                                                                                                                                                                        }
+                                                                                                                                                                    ]
+                                                                                                                                                                },
+                                                                                                                                                                {
+                                                                                                                                                                    "viewId": "com.nearme.instant.card:id/ref_16",
+                                                                                                                                                                    "className": "android.view.ViewGroup"
+                                                                                                                                                                },
+                                                                                                                                                                {
+                                                                                                                                                                    "viewId": "com.nearme.instant.card:id/ref_17",
+                                                                                                                                                                    "className": "android.view.ViewGroup",
+                                                                                                                                                                    "childCount": 6,
+                                                                                                                                                                    "children": [
+                                                                                                                                                                        {
+                                                                                                                                                                            "viewId": "com.nearme.instant.card:id/ref_19",
+                                                                                                                                                                            "className": "android.view.ViewGroup",
+                                                                                                                                                                            "childCount": 3,
+                                                                                                                                                                            "children": [
+                                                                                                                                                                                {
+                                                                                                                                                                                    "viewId": "com.nearme.instant.card:id/ref_20",
+                                                                                                                                                                                    "className": "android.view.ViewGroup"
+                                                                                                                                                                                },
+                                                                                                                                                                                {
+                                                                                                                                                                                    "viewId": "com.nearme.instant.card:id/ref_21",
+                                                                                                                                                                                    "className": "android.view.ViewGroup",
+                                                                                                                                                                                    "childCount": 1,
+                                                                                                                                                                                    "children": [
+                                                                                                                                                                                        {
+                                                                                                                                                                                            "viewId": "com.nearme.instant.card:id/ref_22",
+                                                                                                                                                                                            "className": "android.view.ViewGroup"
+                                                                                                                                                                                        }
+                                                                                                                                                                                    ]
+                                                                                                                                                                                },
+                                                                                                                                                                                {
+                                                                                                                                                                                    "viewId": "com.nearme.instant.card:id/ref_25",
+                                                                                                                                                                                    "className": "android.view.ViewGroup"
+                                                                                                                                                                                }
+                                                                                                                                                                            ]
+                                                                                                                                                                        },
+                                                                                                                                                                        {
+                                                                                                                                                                            "viewId": "com.nearme.instant.card:id/ref_26",
+                                                                                                                                                                            "className": "android.view.ViewGroup"
+                                                                                                                                                                        },
+                                                                                                                                                                        {
+                                                                                                                                                                            "viewId": "com.nearme.instant.card:id/ref_54",
+                                                                                                                                                                            "className": "android.view.ViewGroup",
+                                                                                                                                                                            "childCount": 1,
+                                                                                                                                                                            "children": [
+                                                                                                                                                                                {
+                                                                                                                                                                                    "viewId": "com.nearme.instant.card:id/ref_55",
+                                                                                                                                                                                    "className": "android.view.ViewGroup",
+                                                                                                                                                                                    "childCount": 3,
+                                                                                                                                                                                    "children": [
+                                                                                                                                                                                        {
+                                                                                                                                                                                            "viewId": "com.nearme.instant.card:id/ref_56",
+                                                                                                                                                                                            "className": "android.view.ViewGroup",
+                                                                                                                                                                                            "childCount": 1,
+                                                                                                                                                                                            "children": [
+                                                                                                                                                                                                {
+                                                                                                                                                                                                    "viewId": "com.nearme.instant.card:id/ref_57",
+                                                                                                                                                                                                    "className": "android.widget.ImageView"
+                                                                                                                                                                                                }
+                                                                                                                                                                                            ]
+                                                                                                                                                                                        },
+                                                                                                                                                                                        {
+                                                                                                                                                                                            "viewId": "com.nearme.instant.card:id/ref_58",
+                                                                                                                                                                                            "className": "android.view.ViewGroup",
+                                                                                                                                                                                            "childCount": 1,
+                                                                                                                                                                                            "children": [
+                                                                                                                                                                                                {
+                                                                                                                                                                                                    "viewId": "com.nearme.instant.card:id/ref_59",
+                                                                                                                                                                                                    "className": "android.widget.ImageView"
+                                                                                                                                                                                                }
+                                                                                                                                                                                            ]
+                                                                                                                                                                                        },
+                                                                                                                                                                                        {
+                                                                                                                                                                                            "viewId": "com.nearme.instant.card:id/ref_60",
+                                                                                                                                                                                            "className": "android.view.ViewGroup",
+                                                                                                                                                                                            "childCount": 1,
+                                                                                                                                                                                            "children": [
+                                                                                                                                                                                                {
+                                                                                                                                                                                                    "viewId": "com.nearme.instant.card:id/ref_61",
+                                                                                                                                                                                                    "className": "android.view.View"
+                                                                                                                                                                                                }
+                                                                                                                                                                                            ]
+                                                                                                                                                                                        }
+                                                                                                                                                                                    ]
+                                                                                                                                                                                }
+                                                                                                                                                                            ]
+                                                                                                                                                                        },
+                                                                                                                                                                        {
+                                                                                                                                                                            "viewId": "com.nearme.instant.card:id/ref_64",
+                                                                                                                                                                            "className": "android.view.ViewGroup"
+                                                                                                                                                                        },
+                                                                                                                                                                        {
+                                                                                                                                                                            "viewId": "com.nearme.instant.card:id/ref_65",
+                                                                                                                                                                            "className": "android.view.ViewGroup",
+                                                                                                                                                                            "childCount": 1,
+                                                                                                                                                                            "children": [
+                                                                                                                                                                                {
+                                                                                                                                                                                    "viewId": "com.nearme.instant.card:id/ref_66",
+                                                                                                                                                                                    "className": "android.view.ViewGroup",
+                                                                                                                                                                                    "childCount": 3,
+                                                                                                                                                                                    "children": [
+                                                                                                                                                                                        {
+                                                                                                                                                                                            "viewId": "com.nearme.instant.card:id/ref_67",
+                                                                                                                                                                                            "className": "android.view.ViewGroup",
+                                                                                                                                                                                            "childCount": 1,
+                                                                                                                                                                                            "children": [
+                                                                                                                                                                                                {
+                                                                                                                                                                                                    "viewId": "com.nearme.instant.card:id/ref_68",
+                                                                                                                                                                                                    "className": "android.widget.ImageView"
+                                                                                                                                                                                                }
+                                                                                                                                                                                            ]
+                                                                                                                                                                                        },
+                                                                                                                                                                                        {
+                                                                                                                                                                                            "viewId": "com.nearme.instant.card:id/ref_69",
+                                                                                                                                                                                            "className": "android.view.ViewGroup",
+                                                                                                                                                                                            "childCount": 1,
+                                                                                                                                                                                            "children": [
+                                                                                                                                                                                                {
+                                                                                                                                                                                                    "viewId": "com.nearme.instant.card:id/ref_70",
+                                                                                                                                                                                                    "className": "android.widget.ImageView"
+                                                                                                                                                                                                }
+                                                                                                                                                                                            ]
+                                                                                                                                                                                        },
+                                                                                                                                                                                        {
+                                                                                                                                                                                            "viewId": "com.nearme.instant.card:id/ref_71",
+                                                                                                                                                                                            "className": "android.view.ViewGroup",
+                                                                                                                                                                                            "childCount": 1,
+                                                                                                                                                                                            "children": [
+                                                                                                                                                                                                {
+                                                                                                                                                                                                    "viewId": "com.nearme.instant.card:id/ref_72",
+                                                                                                                                                                                                    "className": "android.view.View"
+                                                                                                                                                                                                }
+                                                                                                                                                                                            ]
+                                                                                                                                                                                        }
+                                                                                                                                                                                    ]
+                                                                                                                                                                                }
+                                                                                                                                                                            ]
+                                                                                                                                                                        },
+                                                                                                                                                                        {
+                                                                                                                                                                            "viewId": "com.nearme.instant.card:id/ref_28",
+                                                                                                                                                                            "className": "android.view.ViewGroup"
+                                                                                                                                                                        }
+                                                                                                                                                                    ]
+                                                                                                                                                                },
+                                                                                                                                                                {
+                                                                                                                                                                    "viewId": "com.nearme.instant.card:id/ref_29",
+                                                                                                                                                                    "className": "android.view.ViewGroup"
+                                                                                                                                                                }
+                                                                                                                                                            ]
+                                                                                                                                                        }
+                                                                                                                                                    ]
+                                                                                                                                                }
+                                                                                                                                            ]
+                                                                                                                                        }
+                                                                                                                                    ]
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        },
+                                                                                        {
+                                                                                            "className": "android.widget.FrameLayout",
+                                                                                            "childCount": 1,
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "className": "android.widget.FrameLayout",
+                                                                                                    "childCount": 2,
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "className": "android.widget.FrameLayout",
+                                                                                                            "isClickable": true,
+                                                                                                            "childCount": 1,
+                                                                                                            "children": [
+                                                                                                                {
+                                                                                                                    "className": "android.view.ViewGroup",
+                                                                                                                    "childCount": 1,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "className": "android.view.ViewGroup",
+                                                                                                                            "contentDescription": "一键加速可释放 1.0GB",
+                                                                                                                            "isClickable": true,
+                                                                                                                            "childCount": 1,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "viewId": "com.oplus.smartengine:id/cl_speed",
+                                                                                                                                    "className": "android.view.ViewGroup",
+                                                                                                                                    "childCount": 5,
+                                                                                                                                    "children": [
+                                                                                                                                        {
+                                                                                                                                            "viewId": "com.oplus.smartengine:id/iv_rocket_anim",
+                                                                                                                                            "className": "android.widget.ImageView"
+                                                                                                                                        },
+                                                                                                                                        {
+                                                                                                                                            "viewId": "com.oplus.smartengine:id/tv_card_title",
+                                                                                                                                            "className": "android.widget.TextView",
+                                                                                                                                            "text": "一键加速"
+                                                                                                                                        },
+                                                                                                                                        {
+                                                                                                                                            "viewId": "com.oplus.smartengine:id/tv_card_subtitle",
+                                                                                                                                            "className": "android.widget.TextView",
+                                                                                                                                            "text": "可释放 1.0GB"
+                                                                                                                                        },
+                                                                                                                                        {
+                                                                                                                                            "viewId": "com.oplus.smartengine:id/ll_memory_view",
+                                                                                                                                            "className": "android.widget.LinearLayout",
+                                                                                                                                            "childCount": 2,
+                                                                                                                                            "children": [
+                                                                                                                                                {
+                                                                                                                                                    "viewId": "com.oplus.smartengine:id/tv_memory_value",
+                                                                                                                                                    "className": "android.widget.TextView"
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                    "viewId": "com.oplus.smartengine:id/tv_memory_unit",
+                                                                                                                                                    "className": "android.widget.TextView"
+                                                                                                                                                }
+                                                                                                                                            ]
+                                                                                                                                        },
+                                                                                                                                        {
+                                                                                                                                            "viewId": "com.oplus.smartengine:id/memory_margin_view",
+                                                                                                                                            "className": "android.view.View"
+                                                                                                                                        }
+                                                                                                                                    ]
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "className": "android.widget.FrameLayout",
+                                                                                                            "isClickable": true,
+                                                                                                            "childCount": 1,
+                                                                                                            "children": [
+                                                                                                                {
+                                                                                                                    "className": "android.view.ViewGroup",
+                                                                                                                    "isClickable": true,
+                                                                                                                    "childCount": 1,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "className": "android.view.ViewGroup",
+                                                                                                                            "childCount": 1,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "viewId": "com.oplus.smartengine:id/cl_speed",
+                                                                                                                                    "className": "android.view.ViewGroup",
+                                                                                                                                    "childCount": 6,
+                                                                                                                                    "children": [
+                                                                                                                                        {
+                                                                                                                                            "viewId": "com.oplus.smartengine:id/tv_clear_size",
+                                                                                                                                            "className": "android.widget.TextView"
+                                                                                                                                        },
+                                                                                                                                        {
+                                                                                                                                            "viewId": "com.oplus.smartengine:id/tv_storage_space",
+                                                                                                                                            "className": "android.widget.TextView",
+                                                                                                                                            "text": "存储空间"
+                                                                                                                                        },
+                                                                                                                                        {
+                                                                                                                                            "viewId": "com.oplus.smartengine:id/tv_clear_status",
+                                                                                                                                            "className": "android.widget.TextView",
+                                                                                                                                            "text": "清理完成"
+                                                                                                                                        },
+                                                                                                                                        {
+                                                                                                                                            "viewId": "com.oplus.smartengine:id/storage_progress",
+                                                                                                                                            "className": "android.view.View"
+                                                                                                                                        },
+                                                                                                                                        {
+                                                                                                                                            "viewId": "com.oplus.smartengine:id/tv_storage_state",
+                                                                                                                                            "className": "android.widget.TextView",
+                                                                                                                                            "text": "30.4GB / 256GB",
+                                                                                                                                            "contentDescription": "30.4GB / 256GB"
+                                                                                                                                        },
+                                                                                                                                        {
+                                                                                                                                            "viewId": "com.oplus.smartengine:id/storage_cl_button",
+                                                                                                                                            "className": "android.view.ViewGroup",
+                                                                                                                                            "childCount": 2,
+                                                                                                                                            "children": [
+                                                                                                                                                {
+                                                                                                                                                    "viewId": "com.oplus.smartengine:id/storage_img_clear",
+                                                                                                                                                    "className": "android.widget.ImageView"
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                    "viewId": "com.oplus.smartengine:id/storage_tv_clear",
+                                                                                                                                                    "className": "android.widget.TextView",
+                                                                                                                                                    "text": "一键清理"
+                                                                                                                                                }
+                                                                                                                                            ]
+                                                                                                                                        }
+                                                                                                                                    ]
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "viewId": "com.android.launcher:id/card_name",
+                                                                            "className": "android.widget.TextView",
+                                                                            "text": "小布建议"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "viewId": "com.android.launcher:id/toggle_state_toolbar",
+                                            "className": "android.view.ViewGroup"
+                                        },
+                                        {
+                                            "viewId": "com.android.launcher:id/toggle_bar_root_top",
+                                            "className": "android.widget.FrameLayout",
+                                            "childCount": 1,
+                                            "children": [
+                                                {
+                                                    "viewId": "com.android.launcher:id/toggle_bar_root",
+                                                    "className": "android.widget.FrameLayout"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "viewId": "com.android.launcher:id/page_preview_root",
+                                            "className": "android.widget.FrameLayout",
+                                            "childCount": 1,
+                                            "children": [
+                                                {
+                                                    "viewId": "com.android.launcher:id/btn_container",
+                                                    "className": "android.widget.LinearLayout",
+                                                    "childCount": 2,
+                                                    "children": [
+                                                        {
+                                                            "viewId": "com.android.launcher:id/btn_form_folder",
+                                                            "className": "android.widget.Button",
+                                                            "text": "组成文件夹",
+                                                            "isClickable": true
+                                                        },
+                                                        {
+                                                            "viewId": "com.android.launcher:id/btn_remove",
+                                                            "className": "android.widget.Button",
+                                                            "text": "卸载",
+                                                            "isClickable": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "viewId": "com.android.launcher:id/page_indicator",
+                                            "className": "android.widget.FrameLayout",
+                                            "contentDescription": "有问题 找小布",
+                                            "childCount": 1,
+                                            "children": [
+                                                {
+                                                    "className": "android.widget.ImageView"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "viewId": "com.android.launcher:id/hotseat",
+                                            "className": "android.view.ViewGroup",
+                                            "childCount": 2,
+                                            "children": [
+                                                {
+                                                    "className": "android.view.View"
+                                                },
+                                                {
+                                                    "className": "android.view.ViewGroup",
+                                                    "childCount": 4,
+                                                    "children": [
+                                                        {
+                                                            "className": "android.widget.TextView",
+                                                            "contentDescription": "拨号",
+                                                            "isClickable": true
+                                                        },
+                                                        {
+                                                            "className": "android.widget.TextView",
+                                                            "contentDescription": "信息",
+                                                            "isClickable": true
+                                                        },
+                                                        {
+                                                            "className": "android.widget.TextView",
+                                                            "contentDescription": "浏览器",
+                                                            "isClickable": true
+                                                        },
+                                                        {
+                                                            "className": "android.widget.TextView",
+                                                            "contentDescription": "相机",
+                                                            "isClickable": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "viewId": "com.android.launcher:id/recent_container",
+                                    "className": "android.widget.FrameLayout",
+                                    "childCount": 1,
+                                    "children": [
+                                        {
+                                            "viewId": "com.android.launcher:id/oplus_clear_all_panel",
+                                            "className": "android.widget.LinearLayout",
+                                            "childCount": 1,
+                                            "children": [
+                                                {
+                                                    "viewId": "com.android.launcher:id/clear_and_clean_panel",
+                                                    "className": "android.widget.RelativeLayout",
+                                                    "childCount": 1,
+                                                    "children": [
+                                                        {
+                                                            "viewId": "com.android.launcher:id/btn_clear",
+                                                            "className": "android.widget.Button",
+                                                            "text": "清除",
+                                                            "contentDescription": "清除"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

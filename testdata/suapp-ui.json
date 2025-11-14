@@ -1,0 +1,175 @@
+UI 树 JSON: {
+    "className": "android.widget.FrameLayout",
+    "childCount": 1,
+    "children": [
+        {
+            "className": "android.widget.LinearLayout",
+            "childCount": 1,
+            "children": [
+                {
+                    "className": "android.widget.FrameLayout",
+                    "childCount": 1,
+                    "children": [
+                        {
+                            "viewId": "com.example.suapp:id/action_bar_root",
+                            "className": "android.widget.LinearLayout",
+                            "childCount": 1,
+                            "children": [
+                                {
+                                    "viewId": "android:id/content",
+                                    "className": "android.widget.FrameLayout",
+                                    "childCount": 1,
+                                    "children": [
+                                        {
+                                            "className": "android.widget.ScrollView",
+                                            "childCount": 1,
+                                            "children": [
+                                                {
+                                                    "className": "android.widget.LinearLayout",
+                                                    "childCount": 22,
+                                                    "children": [
+                                                        {
+                                                            "viewId": "com.example.suapp:id/infoText",
+                                                            "className": "android.widget.TextView",
+                                                            "text": "🔆 屏幕亮度: 200\n📶 WiFi: false\n🟦 蓝牙: true\n📳 NFC: false\n🔄 自动旋转: false\n⚙️ CPU 频率:\nCPU0: 556800 kHz\nCPU1: 556800 kHz\nCPU2: 614400 kHz\nCPU3: 614400 kHz\nCPU4: 614400 kHz\nCPU5: 1824000 kHz\nCPU6: 1824000 kHz\nCPU7: 672000 kHz\n\n📍 GPS 模式: 3\n📍 GNSS 刷新率: -1 ms\n🔄 屏幕刷新率: 60.000004 Hz\n> 最近的程序:\n  * Recent #0: Task{e5e0f90 #173 type=standard A=10331:com.example.suapp}\n  * Recent #1: Task{23213e0 #152 type=standard A=1000:com.android.settings.root}\n  * Recent #2: Task{487ce88 #5 type=undefined I=com.android.launcher/.Launcher}\n  * Recent #3: Task{8fc6aad #170 type=standard A=10327:com.coloros.note}\n  * Recent #4: Task{7d160b #165 type=standard A=10118:com.heytap.market}\n  * Recent #5: Task{46ae2a2 #164 type=standard A=10173:android.task.browser}\n\n"
+                                                        },
+                                                        {
+                                                            "viewId": "com.example.suapp:id/btnRefresh",
+                                                            "className": "android.widget.Button",
+                                                            "text": "🔄 刷新系统信息",
+                                                            "isClickable": true
+                                                        },
+                                                        {
+                                                            "viewId": "com.example.suapp:id/btnToggleWifi",
+                                                            "className": "android.widget.Button",
+                                                            "text": "📶 切换 WiFi 开关",
+                                                            "isClickable": true
+                                                        },
+                                                        {
+                                                            "viewId": "com.example.suapp:id/btnToggleBluetooth",
+                                                            "className": "android.widget.Button",
+                                                            "text": "🟦 切换 蓝牙 开关",
+                                                            "isClickable": true
+                                                        },
+                                                        {
+                                                            "viewId": "com.example.suapp:id/btnToggleNFC",
+                                                            "className": "android.widget.Button",
+                                                            "text": "📳 切换 NFC 开关",
+                                                            "isClickable": true
+                                                        },
+                                                        {
+                                                            "viewId": "com.example.suapp:id/btnToggleMobile",
+                                                            "className": "android.widget.Button",
+                                                            "text": "📶 切换移动数据开关",
+                                                            "isClickable": true
+                                                        },
+                                                        {
+                                                            "viewId": "com.example.suapp:id/btnSetTimeout",
+                                                            "className": "android.widget.Button",
+                                                            "text": "🕒 设置屏幕自动关闭为 30 秒",
+                                                            "isClickable": true
+                                                        },
+                                                        {
+                                                            "viewId": "com.example.suapp:id/btnToggleScreenOnOff",
+                                                            "className": "android.widget.Button",
+                                                            "text": "📱 切换屏幕开关",
+                                                            "isClickable": true
+                                                        },
+                                                        {
+                                                            "viewId": "com.example.suapp:id/btnBrightnessUp",
+                                                            "className": "android.widget.Button",
+                                                            "text": "☀️ 增加亮度",
+                                                            "isClickable": true
+                                                        },
+                                                        {
+                                                            "viewId": "com.example.suapp:id/btnBrightnessDown",
+                                                            "className": "android.widget.Button",
+                                                            "text": "🌙 降低亮度",
+                                                            "isClickable": true
+                                                        },
+                                                        {
+                                                            "viewId": "com.example.suapp:id/btnSetRefreshRate",
+                                                            "className": "android.widget.Button",
+                                                            "text": "🔄 设置屏幕刷新率为 30Hz",
+                                                            "isClickable": true
+                                                        },
+                                                        {
+                                                            "viewId": "com.example.suapp:id/btnToggleAutoRotate",
+                                                            "className": "android.widget.Button",
+                                                            "text": "🔄 切换自动旋转开关",
+                                                            "isClickable": true
+                                                        },
+                                                        {
+                                                            "viewId": "com.example.suapp:id/btnGps",
+                                                            "className": "android.widget.Button",
+                                                            "text": "📍 切换 GPS",
+                                                            "isClickable": true
+                                                        },
+                                                        {
+                                                            "viewId": "com.example.suapp:id/btnSetGnssRate",
+                                                            "className": "android.widget.Button",
+                                                            "text": "📡 设置 GNSS 刷新率为 1Hz",
+                                                            "isClickable": true
+                                                        },
+                                                        {
+                                                            "viewId": "com.example.suapp:id/btnToggleVolumeMute",
+                                                            "className": "android.widget.Button",
+                                                            "text": "🔇 切换静音开关",
+                                                            "isClickable": true
+                                                        },
+                                                        {
+                                                            "viewId": "com.example.suapp:id/btnSetMediaVolume",
+                                                            "className": "android.widget.Button",
+                                                            "text": "🔊 设置媒体音量为 50",
+                                                            "isClickable": true
+                                                        },
+                                                        {
+                                                            "viewId": "com.example.suapp:id/btnSetRingVolume",
+                                                            "className": "android.widget.Button",
+                                                            "text": "🔔 设置铃声音量为 50",
+                                                            "isClickable": true
+                                                        },
+                                                        {
+                                                            "viewId": "com.example.suapp:id/btnSetAlarmVolume",
+                                                            "className": "android.widget.Button",
+                                                            "text": "⏰ 设置闹钟音量为 50",
+                                                            "isClickable": true
+                                                        },
+                                                        {
+                                                            "viewId": "com.example.suapp:id/btnSetNotificationVolume",
+                                                            "className": "android.widget.Button",
+                                                            "text": "🔔 设置通知音量为 50",
+                                                            "isClickable": true
+                                                        },
+                                                        {
+                                                            "viewId": "com.example.suapp:id/btnCpuLimit",
+                                                            "className": "android.widget.Button",
+                                                            "text": "⚙️ 设置 CPU0 频率为 1.2GHz ",
+                                                            "isClickable": true
+                                                        },
+                                                        {
+                                                            "viewId": "com.example.suapp:id/btnSwitchCpu4",
+                                                            "className": "android.widget.Button",
+                                                            "text": "🧠 启停 CPU4 核心 ",
+                                                            "isClickable": true
+                                                        },
+                                                        {
+                                                            "viewId": "com.example.suapp:id/btnSwitchCpu4PowerSave",
+                                                            "className": "android.widget.Button",
+                                                            "text": "🧠 切换 CPU4 省电模式",
+                                                            "isClickable": true
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

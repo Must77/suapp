@@ -1,0 +1,721 @@
+UI 树 JSON: {
+    "className": "android.widget.FrameLayout",
+    "childCount": 1,
+    "children": [
+        {
+            "className": "android.widget.LinearLayout",
+            "childCount": 1,
+            "children": [
+                {
+                    "className": "android.widget.FrameLayout",
+                    "childCount": 1,
+                    "children": [
+                        {
+                            "viewId": "com.android.settings:id/action_bar_root",
+                            "className": "android.widget.LinearLayout",
+                            "childCount": 1,
+                            "children": [
+                                {
+                                    "viewId": "android:id/content",
+                                    "className": "android.widget.FrameLayout",
+                                    "childCount": 1,
+                                    "children": [
+                                        {
+                                            "viewId": "com.android.settings:id/content_parent",
+                                            "className": "android.view.ViewGroup",
+                                            "childCount": 2,
+                                            "children": [
+                                                {
+                                                    "viewId": "com.android.settings:id/abl",
+                                                    "className": "android.widget.LinearLayout",
+                                                    "childCount": 2,
+                                                    "children": [
+                                                        {
+                                                            "viewId": "com.android.settings:id/toolbar",
+                                                            "className": "android.view.ViewGroup",
+                                                            "childCount": 3,
+                                                            "children": [
+                                                                {
+                                                                    "viewId": "com.android.settings:id/coui_toolbar_back_view",
+                                                                    "className": "android.widget.ImageButton",
+                                                                    "contentDescription": "转到上一层级",
+                                                                    "isClickable": true
+                                                                },
+                                                                {
+                                                                    "className": "android.widget.TextView",
+                                                                    "text": "已下载的应用"
+                                                                },
+                                                                {
+                                                                    "viewId": "com.android.settings:id/coui_toolbar_more_view",
+                                                                    "className": "androidx.appcompat.widget.LinearLayoutCompat"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "viewId": "com.android.settings:id/divider_line",
+                                                            "className": "android.view.View"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "viewId": "com.android.settings:id/content_frame",
+                                                    "className": "android.widget.FrameLayout",
+                                                    "childCount": 1,
+                                                    "children": [
+                                                        {
+                                                            "className": "android.widget.LinearLayout",
+                                                            "childCount": 1,
+                                                            "children": [
+                                                                {
+                                                                    "viewId": "com.android.settings:id/main_content",
+                                                                    "className": "android.widget.FrameLayout",
+                                                                    "childCount": 1,
+                                                                    "children": [
+                                                                        {
+                                                                            "className": "android.view.ViewGroup",
+                                                                            "childCount": 1,
+                                                                            "children": [
+                                                                                {
+                                                                                    "viewId": "com.android.settings:id/main_layout",
+                                                                                    "className": "android.widget.RelativeLayout",
+                                                                                    "childCount": 1,
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "viewId": "android:id/list_container",
+                                                                                            "className": "android.widget.FrameLayout",
+                                                                                            "childCount": 1,
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "viewId": "com.android.settings:id/recycler_view",
+                                                                                                    "className": "androidx.recyclerview.widget.RecyclerView",
+                                                                                                    "childCount": 12,
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "className": "android.widget.LinearLayout",
+                                                                                                            "childCount": 1,
+                                                                                                            "children": [
+                                                                                                                {
+                                                                                                                    "className": "android.widget.FrameLayout"
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "className": "android.widget.LinearLayout",
+                                                                                                            "isClickable": true,
+                                                                                                            "childCount": 2,
+                                                                                                            "children": [
+                                                                                                                {
+                                                                                                                    "viewId": "com.android.settings:id/customLinearLayoutForList",
+                                                                                                                    "className": "android.widget.LinearLayout",
+                                                                                                                    "childCount": 3,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "viewId": "com.android.settings:id/messageLayout",
+                                                                                                                            "className": "android.widget.RelativeLayout",
+                                                                                                                            "childCount": 1,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "viewId": "android:id/title",
+                                                                                                                                    "className": "android.widget.TextView",
+                                                                                                                                    "text": "accessibility_service_label"
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "className": "android.widget.LinearLayout"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "viewId": "com.android.settings:id/assignment",
+                                                                                                                            "className": "android.widget.TextView",
+                                                                                                                            "text": "已开启"
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "viewId": "android:id/widget_frame",
+                                                                                                                    "className": "android.widget.LinearLayout",
+                                                                                                                    "childCount": 1,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "className": "android.widget.LinearLayout",
+                                                                                                                            "childCount": 2,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "className": "android.widget.LinearLayout"
+                                                                                                                                },
+                                                                                                                                {
+                                                                                                                                    "viewId": "com.android.settings:id/coui_preference_widget_jump",
+                                                                                                                                    "className": "android.widget.ImageView"
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "className": "android.widget.LinearLayout",
+                                                                                                            "isClickable": true,
+                                                                                                            "childCount": 2,
+                                                                                                            "children": [
+                                                                                                                {
+                                                                                                                    "viewId": "com.android.settings:id/customLinearLayoutForList",
+                                                                                                                    "className": "android.widget.LinearLayout",
+                                                                                                                    "childCount": 3,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "viewId": "com.android.settings:id/messageLayout",
+                                                                                                                            "className": "android.widget.RelativeLayout",
+                                                                                                                            "childCount": 1,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "viewId": "android:id/title",
+                                                                                                                                    "className": "android.widget.TextView",
+                                                                                                                                    "text": "全局搜索"
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "className": "android.widget.LinearLayout"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "viewId": "com.android.settings:id/assignment",
+                                                                                                                            "className": "android.widget.TextView",
+                                                                                                                            "text": "已关闭"
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "viewId": "android:id/widget_frame",
+                                                                                                                    "className": "android.widget.LinearLayout",
+                                                                                                                    "childCount": 1,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "className": "android.widget.LinearLayout",
+                                                                                                                            "childCount": 2,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "className": "android.widget.LinearLayout"
+                                                                                                                                },
+                                                                                                                                {
+                                                                                                                                    "viewId": "com.android.settings:id/coui_preference_widget_jump",
+                                                                                                                                    "className": "android.widget.ImageView"
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "className": "android.widget.LinearLayout",
+                                                                                                            "isClickable": true,
+                                                                                                            "childCount": 2,
+                                                                                                            "children": [
+                                                                                                                {
+                                                                                                                    "viewId": "com.android.settings:id/customLinearLayoutForList",
+                                                                                                                    "className": "android.widget.LinearLayout",
+                                                                                                                    "childCount": 3,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "viewId": "com.android.settings:id/messageLayout",
+                                                                                                                            "className": "android.widget.RelativeLayout",
+                                                                                                                            "childCount": 1,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "viewId": "android:id/title",
+                                                                                                                                    "className": "android.widget.TextView",
+                                                                                                                                    "text": "密码本"
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "className": "android.widget.LinearLayout"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "viewId": "com.android.settings:id/assignment",
+                                                                                                                            "className": "android.widget.TextView",
+                                                                                                                            "text": "已关闭"
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "viewId": "android:id/widget_frame",
+                                                                                                                    "className": "android.widget.LinearLayout",
+                                                                                                                    "childCount": 1,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "className": "android.widget.LinearLayout",
+                                                                                                                            "childCount": 2,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "className": "android.widget.LinearLayout"
+                                                                                                                                },
+                                                                                                                                {
+                                                                                                                                    "viewId": "com.android.settings:id/coui_preference_widget_jump",
+                                                                                                                                    "className": "android.widget.ImageView"
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "className": "android.widget.LinearLayout",
+                                                                                                            "isClickable": true,
+                                                                                                            "childCount": 2,
+                                                                                                            "children": [
+                                                                                                                {
+                                                                                                                    "viewId": "com.android.settings:id/customLinearLayoutForList",
+                                                                                                                    "className": "android.widget.LinearLayout",
+                                                                                                                    "childCount": 3,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "viewId": "com.android.settings:id/messageLayout",
+                                                                                                                            "className": "android.widget.RelativeLayout",
+                                                                                                                            "childCount": 1,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "viewId": "android:id/title",
+                                                                                                                                    "className": "android.widget.TextView",
+                                                                                                                                    "text": "快捷导航"
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "className": "android.widget.LinearLayout"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "viewId": "com.android.settings:id/assignment",
+                                                                                                                            "className": "android.widget.TextView",
+                                                                                                                            "text": "已关闭"
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "viewId": "android:id/widget_frame",
+                                                                                                                    "className": "android.widget.LinearLayout",
+                                                                                                                    "childCount": 1,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "className": "android.widget.LinearLayout",
+                                                                                                                            "childCount": 2,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "className": "android.widget.LinearLayout"
+                                                                                                                                },
+                                                                                                                                {
+                                                                                                                                    "viewId": "com.android.settings:id/coui_preference_widget_jump",
+                                                                                                                                    "className": "android.widget.ImageView"
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "className": "android.widget.LinearLayout",
+                                                                                                            "isClickable": true,
+                                                                                                            "childCount": 2,
+                                                                                                            "children": [
+                                                                                                                {
+                                                                                                                    "viewId": "com.android.settings:id/customLinearLayoutForList",
+                                                                                                                    "className": "android.widget.LinearLayout",
+                                                                                                                    "childCount": 3,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "viewId": "com.android.settings:id/messageLayout",
+                                                                                                                            "className": "android.widget.RelativeLayout",
+                                                                                                                            "childCount": 1,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "viewId": "android:id/title",
+                                                                                                                                    "className": "android.widget.TextView",
+                                                                                                                                    "text": "意图执行框架"
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "className": "android.widget.LinearLayout"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "viewId": "com.android.settings:id/assignment",
+                                                                                                                            "className": "android.widget.TextView",
+                                                                                                                            "text": "已关闭"
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "viewId": "android:id/widget_frame",
+                                                                                                                    "className": "android.widget.LinearLayout",
+                                                                                                                    "childCount": 1,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "className": "android.widget.LinearLayout",
+                                                                                                                            "childCount": 2,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "className": "android.widget.LinearLayout"
+                                                                                                                                },
+                                                                                                                                {
+                                                                                                                                    "viewId": "com.android.settings:id/coui_preference_widget_jump",
+                                                                                                                                    "className": "android.widget.ImageView"
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "className": "android.widget.LinearLayout",
+                                                                                                            "isClickable": true,
+                                                                                                            "childCount": 2,
+                                                                                                            "children": [
+                                                                                                                {
+                                                                                                                    "viewId": "com.android.settings:id/customLinearLayoutForList",
+                                                                                                                    "className": "android.widget.LinearLayout",
+                                                                                                                    "childCount": 3,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "viewId": "com.android.settings:id/messageLayout",
+                                                                                                                            "className": "android.widget.RelativeLayout",
+                                                                                                                            "childCount": 1,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "viewId": "android:id/title",
+                                                                                                                                    "className": "android.widget.TextView",
+                                                                                                                                    "text": "文件管理"
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "className": "android.widget.LinearLayout"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "viewId": "com.android.settings:id/assignment",
+                                                                                                                            "className": "android.widget.TextView",
+                                                                                                                            "text": "已关闭"
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "viewId": "android:id/widget_frame",
+                                                                                                                    "className": "android.widget.LinearLayout",
+                                                                                                                    "childCount": 1,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "className": "android.widget.LinearLayout",
+                                                                                                                            "childCount": 2,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "className": "android.widget.LinearLayout"
+                                                                                                                                },
+                                                                                                                                {
+                                                                                                                                    "viewId": "com.android.settings:id/coui_preference_widget_jump",
+                                                                                                                                    "className": "android.widget.ImageView"
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "className": "android.widget.LinearLayout",
+                                                                                                            "isClickable": true,
+                                                                                                            "childCount": 2,
+                                                                                                            "children": [
+                                                                                                                {
+                                                                                                                    "viewId": "com.android.settings:id/customLinearLayoutForList",
+                                                                                                                    "className": "android.widget.LinearLayout",
+                                                                                                                    "childCount": 3,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "viewId": "com.android.settings:id/messageLayout",
+                                                                                                                            "className": "android.widget.RelativeLayout",
+                                                                                                                            "childCount": 1,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "viewId": "android:id/title",
+                                                                                                                                    "className": "android.widget.TextView",
+                                                                                                                                    "text": "文档"
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "className": "android.widget.LinearLayout"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "viewId": "com.android.settings:id/assignment",
+                                                                                                                            "className": "android.widget.TextView",
+                                                                                                                            "text": "已关闭"
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "viewId": "android:id/widget_frame",
+                                                                                                                    "className": "android.widget.LinearLayout",
+                                                                                                                    "childCount": 1,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "className": "android.widget.LinearLayout",
+                                                                                                                            "childCount": 2,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "className": "android.widget.LinearLayout"
+                                                                                                                                },
+                                                                                                                                {
+                                                                                                                                    "viewId": "com.android.settings:id/coui_preference_widget_jump",
+                                                                                                                                    "className": "android.widget.ImageView"
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "className": "android.widget.LinearLayout",
+                                                                                                            "isClickable": true,
+                                                                                                            "childCount": 2,
+                                                                                                            "children": [
+                                                                                                                {
+                                                                                                                    "viewId": "com.android.settings:id/customLinearLayoutForList",
+                                                                                                                    "className": "android.widget.LinearLayout",
+                                                                                                                    "childCount": 3,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "viewId": "com.android.settings:id/messageLayout",
+                                                                                                                            "className": "android.widget.RelativeLayout",
+                                                                                                                            "childCount": 1,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "viewId": "android:id/title",
+                                                                                                                                    "className": "android.widget.TextView",
+                                                                                                                                    "text": "百度输入法定制版"
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "className": "android.widget.LinearLayout"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "viewId": "com.android.settings:id/assignment",
+                                                                                                                            "className": "android.widget.TextView",
+                                                                                                                            "text": "已关闭"
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "viewId": "android:id/widget_frame",
+                                                                                                                    "className": "android.widget.LinearLayout",
+                                                                                                                    "childCount": 1,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "className": "android.widget.LinearLayout",
+                                                                                                                            "childCount": 2,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "className": "android.widget.LinearLayout"
+                                                                                                                                },
+                                                                                                                                {
+                                                                                                                                    "viewId": "com.android.settings:id/coui_preference_widget_jump",
+                                                                                                                                    "className": "android.widget.ImageView"
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "className": "android.widget.LinearLayout",
+                                                                                                            "isClickable": true,
+                                                                                                            "childCount": 2,
+                                                                                                            "children": [
+                                                                                                                {
+                                                                                                                    "viewId": "com.android.settings:id/customLinearLayoutForList",
+                                                                                                                    "className": "android.widget.LinearLayout",
+                                                                                                                    "childCount": 3,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "viewId": "com.android.settings:id/messageLayout",
+                                                                                                                            "className": "android.widget.RelativeLayout",
+                                                                                                                            "childCount": 1,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "viewId": "android:id/title",
+                                                                                                                                    "className": "android.widget.TextView",
+                                                                                                                                    "text": "自动填充"
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "className": "android.widget.LinearLayout"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "viewId": "com.android.settings:id/assignment",
+                                                                                                                            "className": "android.widget.TextView",
+                                                                                                                            "text": "已关闭"
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "viewId": "android:id/widget_frame",
+                                                                                                                    "className": "android.widget.LinearLayout",
+                                                                                                                    "childCount": 1,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "className": "android.widget.LinearLayout",
+                                                                                                                            "childCount": 2,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "className": "android.widget.LinearLayout"
+                                                                                                                                },
+                                                                                                                                {
+                                                                                                                                    "viewId": "com.android.settings:id/coui_preference_widget_jump",
+                                                                                                                                    "className": "android.widget.ImageView"
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "className": "android.widget.LinearLayout",
+                                                                                                            "isClickable": true,
+                                                                                                            "childCount": 2,
+                                                                                                            "children": [
+                                                                                                                {
+                                                                                                                    "viewId": "com.android.settings:id/customLinearLayoutForList",
+                                                                                                                    "className": "android.widget.LinearLayout",
+                                                                                                                    "childCount": 3,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "viewId": "com.android.settings:id/messageLayout",
+                                                                                                                            "className": "android.widget.RelativeLayout",
+                                                                                                                            "childCount": 1,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "viewId": "android:id/title",
+                                                                                                                                    "className": "android.widget.TextView",
+                                                                                                                                    "text": "融合搜索服务"
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "className": "android.widget.LinearLayout"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "viewId": "com.android.settings:id/assignment",
+                                                                                                                            "className": "android.widget.TextView",
+                                                                                                                            "text": "已关闭"
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "viewId": "android:id/widget_frame",
+                                                                                                                    "className": "android.widget.LinearLayout",
+                                                                                                                    "childCount": 1,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "className": "android.widget.LinearLayout",
+                                                                                                                            "childCount": 2,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "className": "android.widget.LinearLayout"
+                                                                                                                                },
+                                                                                                                                {
+                                                                                                                                    "viewId": "com.android.settings:id/coui_preference_widget_jump",
+                                                                                                                                    "className": "android.widget.ImageView"
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "className": "android.widget.LinearLayout",
+                                                                                                            "isClickable": true,
+                                                                                                            "childCount": 2,
+                                                                                                            "children": [
+                                                                                                                {
+                                                                                                                    "viewId": "com.android.settings:id/customLinearLayoutForList",
+                                                                                                                    "className": "android.widget.LinearLayout",
+                                                                                                                    "childCount": 3,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "viewId": "com.android.settings:id/messageLayout",
+                                                                                                                            "className": "android.widget.RelativeLayout",
+                                                                                                                            "childCount": 1,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "viewId": "android:id/title",
+                                                                                                                                    "className": "android.widget.TextView",
+                                                                                                                                    "text": "连接至 Windows"
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "className": "android.widget.LinearLayout"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "viewId": "com.android.settings:id/assignment",
+                                                                                                                            "className": "android.widget.TextView",
+                                                                                                                            "text": "已关闭"
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "viewId": "android:id/widget_frame",
+                                                                                                                    "className": "android.widget.LinearLayout",
+                                                                                                                    "childCount": 1,
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "className": "android.widget.LinearLayout",
+                                                                                                                            "childCount": 2,
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "className": "android.widget.LinearLayout"
+                                                                                                                                },
+                                                                                                                                {
+                                                                                                                                    "viewId": "com.android.settings:id/coui_preference_widget_jump",
+                                                                                                                                    "className": "android.widget.ImageView"
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
