@@ -140,6 +140,14 @@ object Executor {
         val exitCode = process.waitFor()
     }
 
+/** 启用权限 **/
+    fun accessibilityServiceEnable(context: Context, serviceClass: Class<*>) {
+        val serviceName = "${context.packageName}/${serviceClass.name}"
+        val command = "su -c settings put secure enabled_accessibility_services $serviceName"
+        val command2 = "su -c settings put secure accessibility_enabled 1"
+        val process = Runtime.getRuntime().exec(command)
+        val process2 = Runtime.getRuntime().exec(command2)
+    }
 
 // ======待修改=====
     private fun execRoot(cmd: String) {

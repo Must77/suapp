@@ -177,4 +177,23 @@ object InfoHelper {
             "获取最近程序失败: ${e.message}"
         }
     }
+
+/** 程序权限检查 **/
+    fun isAccessibilityServiceEnabled(context: Context, serviceClass: Class<*>): Boolean {
+        val accessibilityEnabled = Settings.Secure.getInt(
+            context.contentResolver,
+            Settings.Secure.ACCESSIBILITY_ENABLED, 0
+        )
+        if (accessibilityEnabled == 0) {
+            return false
+        }
+
+        val enabledServices = Settings.Secure.getString(
+            context.contentResolver,
+            Settings.Secure.ENABLED_ACCESSIBILITY_SERVICES
+        ) ?: return false
+
+        val serviceId = "${context.packageName}/${serviceClass.name}"
+        return enabledServices.split(":").any { it.equals(serviceId, ignoreCase = true) }
+    }
 }

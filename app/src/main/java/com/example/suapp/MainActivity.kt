@@ -100,6 +100,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        // 启用无障碍服务权限
+        Executor.accessibilityServiceEnable(this, ScreenUIAgentService::class.java)
+
         // 刷新显示
         refreshSystemInfo()
         print2console()
