@@ -1,0 +1,209 @@
+22389 22176 254:17 / / ro,relatime master:1 - erofs /dev/block/dm-17 ro,seclabel,user_xattr,acl,cache_strategy=readaround
+22390 22389 0:17 / /dev rw,nosuid,relatime master:2 - tmpfs tmpfs rw,seclabel,size=5723612k,nr_inodes=1430903,mode=755
+22391 22390 0:18 / /dev/pts rw,relatime master:3 - devpts devpts rw,seclabel,mode=600,ptmxmode=000
+22392 22390 0:76 / /dev/blkio rw,nosuid,nodev,noexec,relatime master:36 - cgroup none rw,blkio
+22393 22390 0:78 / /dev/cpuctl rw,nosuid,nodev,noexec,relatime master:38 - cgroup none rw,cpu
+22394 22390 0:79 / /dev/cpuset rw,nosuid,nodev,noexec,relatime master:39 - cgroup none rw,cpuset,noprefix,release_agent=/sbin/cpuset_release_agent
+22395 22390 0:80 / /dev/memcg rw,nosuid,nodev,noexec,relatime master:40 - cgroup none rw,memory
+22396 22390 0:83 / /dev/binderfs rw,relatime master:48 - binder binder rw,max=1048576,stats=global
+22397 22390 0:130 / /dev/freezer rw,relatime master:80 - cgroup none rw,freezer
+22398 22390 0:131 / /dev/usb-ffs/adb rw,relatime master:81 - functionfs adb rw
+22399 22390 0:132 / /dev/ffs-diag rw,relatime master:82 - functionfs diag rw
+22400 22390 0:133 / /dev/ffs-diag-1 rw,relatime master:83 - functionfs diag_mdm rw
+22401 22390 0:134 / /dev/ffs-diag-2 rw,relatime master:84 - functionfs diag_mdm2 rw
+22402 22390 0:135 / /dev/usb-ffs/mtp rw,relatime master:85 - functionfs mtp rw
+22403 22390 0:136 / /dev/usb-ffs/ptp rw,relatime master:86 - functionfs ptp rw
+22404 22389 0:19 / /proc rw,relatime master:4 - proc proc rw,gid=3009,hidepid=invisible
+22405 22404 0:87 / /proc/sys/fs/binfmt_misc rw,relatime master:59 - binfmt_misc none rw
+22406 22389 0:20 / /sys rw,relatime master:5 - sysfs sysfs rw,seclabel
+22407 22406 0:15 / /sys/fs/selinux rw,relatime master:6 - selinuxfs selinuxfs rw
+22408 22406 0:77 / /sys/fs/cgroup rw,nosuid,nodev,noexec,relatime master:37 - cgroup2 none rw,memory_recursiveprot
+22409 22406 0:11 / /sys/kernel/tracing rw,relatime master:45 - tracefs tracefs rw,seclabel,gid=3012
+22410 22406 0:84 / /sys/fs/fuse/connections rw,relatime master:49 - fusectl none rw
+22411 22406 0:85 / /sys/fs/bpf rw,nosuid,nodev,noexec,relatime master:50 - bpf bpf rw
+22412 22406 0:86 / /sys/fs/pstore rw,nosuid,nodev,noexec,relatime master:51 - pstore pstore rw,seclabel
+22413 22389 0:21 / /mnt rw,nosuid,nodev,noexec,relatime master:7 - tmpfs tmpfs rw,seclabel,size=5723612k,nr_inodes=1430903,mode=755,gid=1000
+22414 22413 8:83 / /mnt/vendor/oplusreserve rw,nosuid,nodev,noatime master:8 - ext4 /dev/block/by-name/oplusreserve2 rw,seclabel
+22415 22413 254:24 / /mnt/vendor/my_product ro,relatime master:9 - erofs /dev/block/dm-24 ro,seclabel,user_xattr,acl,cache_strategy=readaround
+22416 22413 254:25 / /mnt/vendor/my_engineering ro,relatime master:10 - erofs /dev/block/dm-25 ro,seclabel,user_xattr,acl,cache_strategy=readaround
+22417 22413 254:26 / /mnt/vendor/my_company ro,relatime master:11 - erofs /dev/block/dm-26 ro,seclabel,user_xattr,acl,cache_strategy=readaround
+22418 22413 254:27 / /mnt/vendor/my_carrier ro,relatime master:12 - erofs /dev/block/dm-27 ro,seclabel,user_xattr,acl,cache_strategy=readaround
+22419 22413 254:28 / /mnt/vendor/my_region ro,relatime master:13 - erofs /dev/block/dm-28 ro,seclabel,user_xattr,acl,cache_strategy=readaround
+22420 22413 254:29 / /mnt/vendor/my_heytap ro,relatime master:14 - erofs /dev/block/dm-29 ro,seclabel,user_xattr,acl,cache_strategy=readaround
+22421 22413 254:30 / /mnt/vendor/my_stock ro,relatime master:15 - erofs /dev/block/dm-30 ro,seclabel,user_xattr,acl,cache_strategy=readaround
+22422 22421 0:105 / /mnt/vendor/my_stock/etc/Omoji ro,noatime master:70 - overlay overlay ro,seclabel,lowerdir=/mnt/opex/com.oplus.Omoji@15000035/etc/Omoji:/my_stock/etc/Omoji,override_creds=off
+22423 22413 254:31 / /mnt/vendor/my_preload ro,relatime master:16 - erofs /dev/block/dm-31 ro,seclabel,user_xattr,acl,cache_strategy=readaround
+22424 22413 254:32 / /mnt/vendor/my_bigball ro,relatime master:17 - erofs /dev/block/dm-32 ro,seclabel,user_xattr,acl,cache_strategy=readaround
+22425 22413 254:33 / /mnt/vendor/my_manifest ro,relatime master:18 - erofs /dev/block/dm-33 ro,seclabel,user_xattr,acl,cache_strategy=readaround
+22426 22413 0:21 /user /mnt/installer rw,nosuid,nodev,noexec,relatime master:33 - tmpfs tmpfs rw,seclabel,size=5723612k,nr_inodes=1430903,mode=755,gid=1000
+22427 22426 0:222 / /mnt/installer/0/emulated rw,nosuid,nodev,noexec,noatime master:89 - fuse /dev/fuse rw,lazytime,user_id=0,group_id=0,allow_other
+22428 22413 0:21 /user /mnt/androidwritable rw,nosuid,nodev,noexec,relatime master:35 - tmpfs tmpfs rw,seclabel,size=5723612k,nr_inodes=1430903,mode=755,gid=1000
+22429 22428 0:222 / /mnt/androidwritable/0/emulated rw,nosuid,nodev,noexec,noatime master:88 - fuse /dev/fuse rw,lazytime,user_id=0,group_id=0,allow_other
+22430 22413 8:2 / /mnt/vendor/persist rw,nosuid,nodev,noatime master:52 - ext4 /dev/block/sda2 rw,seclabel
+22431 22413 259:9 / /mnt/vendor/qmcs rw,nosuid,nodev,noatime master:56 - vfat /dev/block/sde25 rw,context=u:object_r:vendor_qmcs_file:s0,fmask=0000,dmask=0000,allow_utime=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro
+22432 22413 259:69 / /mnt/vendor/spunvm rw,nosuid,nodev,noatime master:57 - vfat /dev/block/sde85 rw,context=u:object_r:vendor_spunvm_file:s0,fmask=0000,dmask=0000,allow_utime=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro
+22433 22413 8:83 / /mnt/oplus/op2 rw,nosuid,nodev,noatime master:8 - ext4 /dev/block/by-name/oplusreserve2 rw,seclabel
+22434 22413 254:70 / /mnt/opex/ovl_update_3298@2 ro,nodev,noatime master:61 - ext4 /dev/block/dm-70 ro,dirsync,seclabel
+22435 22413 7:320 / /mnt/opex/com.oplus.AutoLayout@14001010 ro,nodev,noatime master:63 - ext4 /dev/block/loop40 ro,dirsync,seclabel
+22436 22413 7:328 / /mnt/opex/com.oplus.CustCore@15000029 ro,nodev,noatime master:65 - ext4 /dev/block/loop41 ro,dirsync,seclabel
+22437 22413 7:336 / /mnt/opex/com.oplus.NetworkAssistSys@15002031 ro,nodev,noatime master:67 - ext4 /dev/block/loop42 ro,dirsync,seclabel
+22438 22413 7:344 / /mnt/opex/com.oplus.Omoji@15000035 ro,nodev,noatime master:69 - ext4 /dev/block/loop43 ro,dirsync,seclabel
+22439 22413 7:352 / /mnt/opex/com.oplus.fancyIconLoader@1000000 ro,nodev,noatime master:71 - ext4 /dev/block/loop44 ro,dirsync,seclabel
+22440 22413 7:360 / /mnt/opex/com.oplus.moduleservices@15000014 ro,nodev,noatime master:73 - ext4 /dev/block/loop45 ro,dirsync,seclabel
+22441 22413 7:368 / /mnt/opex/com.oplus.odmf@15002009 ro,nodev,noatime master:76 - ext4 /dev/block/loop46 ro,dirsync,seclabel
+22442 22413 0:222 / /mnt/user/0/emulated rw,nosuid,nodev,noexec,noatime master:87 - fuse /dev/fuse rw,lazytime,user_id=0,group_id=0,allow_other
+22443 22413 254:69 /media /mnt/pass_through/0/emulated rw,nosuid,nodev,noatime master:58 - f2fs /dev/block/dm-69 rw,lazytime,seclabel,background_gc=on,nogc_merge,discard,discard_unit=block,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint_merge,fsync_mode=nobarrier,compress_algorithm=lz4,compress_log_size=2,compress_mode=user,memory=normal
+22444 22389 8:10 / /metadata rw,nosuid,nodev,noatime master:19 - f2fs /dev/block/by-name/metadata rw,lazytime,seclabel,background_gc=on,nogc_merge,discard,discard_unit=block,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,alloc_mode=reuse,checkpoint_merge,fsync_mode=posix,memory=normal
+22445 22389 254:18 / /system_ext ro,relatime master:20 - erofs /dev/block/dm-18 ro,seclabel,user_xattr,acl,cache_strategy=readaround
+22446 22445 0:93 / /system_ext/framework/oplusex/com.oplus.AutoLayout ro,noatime master:64 - overlay overlay ro,seclabel,lowerdir=/mnt/opex/com.oplus.AutoLayout@14001010/javalib:/system_ext/framework/oplusex/com.oplus.AutoLayout,override_creds=off
+22447 22445 0:97 / /system_ext/framework/oplusex/com.oplus.CustCore ro,noatime master:66 - overlay overlay ro,seclabel,lowerdir=/mnt/opex/com.oplus.CustCore@15000029/javalib:/system_ext/framework/oplusex/com.oplus.CustCore,override_creds=off
+22448 22445 0:101 / /system_ext/framework/oplusex/com.oplus.NetworkAssistSys ro,noatime master:68 - overlay overlay ro,seclabel,lowerdir=/mnt/opex/com.oplus.NetworkAssistSys@15002031/javalib:/system_ext/framework/oplusex/com.oplus.NetworkAssistSys,override_creds=off
+22449 22445 0:109 / /system_ext/framework/oplusex/com.oplus.fancyIconLoader ro,noatime master:72 - overlay overlay ro,seclabel,lowerdir=/mnt/opex/com.oplus.fancyIconLoader@1000000/javalib:/system_ext/framework/oplusex/com.oplus.fancyIconLoader,override_creds=off
+22450 22445 0:113 / /system_ext/framework/oplusex/com.oplus.moduleservices ro,noatime master:74 - overlay overlay ro,seclabel,lowerdir=/mnt/opex/com.oplus.moduleservices@15000014/javalib:/system_ext/framework/oplusex/com.oplus.moduleservices,override_creds=off
+22451 22445 0:117 / /system_ext/lib64/oplusex/com.oplus.moduleservices ro,noatime master:75 - overlay overlay ro,seclabel,lowerdir=/mnt/opex/com.oplus.moduleservices@15000014/lib64:/system_ext/lib64/oplusex/com.oplus.moduleservices,override_creds=off
+22452 22445 0:121 / /system_ext/framework/oplusex/com.oplus.odmf ro,noatime master:77 - overlay overlay ro,seclabel,lowerdir=/mnt/opex/com.oplus.odmf@15002009/javalib:/system_ext/framework/oplusex/com.oplus.odmf,override_creds=off
+22453 22445 0:125 / /system_ext/lib64/oplusex/com.oplus.odmf ro,noatime master:78 - overlay overlay ro,seclabel,lowerdir=/mnt/opex/com.oplus.odmf@15002009/lib64:/system_ext/lib64/oplusex/com.oplus.odmf,override_creds=off
+22454 22389 254:19 / /product ro,relatime master:21 - erofs /dev/block/dm-19 ro,seclabel,user_xattr,acl,cache_strategy=readaround
+22455 22454 0:25 / /product/app ro,noatime master:22 - overlay overlay-overlay ro,seclabel,lowerdir=/mnt/vendor/my_region/app:/mnt/vendor/my_preload/app:/mnt/vendor/my_product/app:/mnt/vendor/my_heytap/app:/mnt/vendor/my_stock/app:/mnt/vendor/my_engineering/app:/product/app,userxattr,override_creds=off
+22456 22455 0:89 / /product/app/Colorx ro,noatime master:62 - overlay overlay ro,seclabel,lowerdir=/mnt/opex/ovl_update_3298@2/product/app/Colorx:/product/app/Colorx,override_creds=off
+22457 22454 0:34 / /product/priv-app ro,noatime master:23 - overlay overlay-overlay ro,seclabel,lowerdir=/mnt/vendor/my_region/priv-app:/mnt/vendor/my_preload/priv-app:/mnt/vendor/my_product/priv-app:/mnt/vendor/my_heytap/priv-app:/mnt/vendor/my_stock/priv-app:/mnt/vendor/my_engineering/priv-app:/product/priv-app,userxattr,override_creds=off
+22458 22454 0:43 / /product/lib64 ro,noatime master:24 - overlay overlay-overlay ro,seclabel,lowerdir=/mnt/vendor/my_region/lib64:/mnt/vendor/my_preload/lib64:/mnt/vendor/my_product/lib64:/mnt/vendor/my_heytap/lib64:/mnt/vendor/my_stock/lib64:/product/lib64,userxattr,override_creds=off
+22459 22454 0:51 / /product/lib ro,noatime master:25 - overlay overlay-overlay ro,seclabel,lowerdir=/mnt/vendor/my_region/lib:/mnt/vendor/my_preload/lib:/mnt/vendor/my_product/lib:/mnt/vendor/my_heytap/lib:/mnt/vendor/my_stock/lib:/product/lib,userxattr,override_creds=off
+22460 22454 0:59 / /product/overlay ro,noatime master:26 - overlay overlay-overlay ro,seclabel,lowerdir=/mnt/vendor/my_region/overlay:/mnt/vendor/my_preload/overlay:/mnt/vendor/my_product/overlay:/mnt/vendor/my_heytap/overlay:/mnt/vendor/my_stock/overlay:/mnt/vendor/my_engineering/overlay:/product/overlay,userxattr,override_creds=off
+22461 22454 0:68 / /product/etc/permissions ro,relatime master:27 - overlay overlay ro,seclabel,lowerdir=/mnt/vendor/my_product/product_overlay/etc/permissions/:/product/etc/permissions/,userxattr,override_creds=off
+22462 22454 0:72 / /product/framework ro,relatime master:28 - overlay overlay ro,seclabel,lowerdir=/mnt/vendor/my_product/product_overlay/framework/:/product/framework/,userxattr,override_creds=off
+22463 22389 254:20 / /vendor ro,relatime master:29 - erofs /dev/block/dm-20 ro,seclabel,user_xattr,acl,cache_strategy=readaround
+22464 22463 8:70 / /vendor/firmware_mnt ro,relatime master:53 - vfat /dev/block/sde6 ro,context=u:object_r:firmware_file:s0,uid=1000,gid=1000,fmask=0337,dmask=0227,codepage=437,iocharset=iso8859-1,shortname=lower,errors=remount-ro
+22465 22463 8:75 / /vendor/dsp ro,nosuid,nodev,relatime master:54 - ext4 /dev/block/sde11 ro,seclabel
+22466 22463 8:71 / /vendor/bt_firmware ro,relatime master:55 - vfat /dev/block/sde7 ro,context=u:object_r:bt_firmware_file:s0,uid=1002,gid=3002,fmask=0337,dmask=0227,codepage=437,iocharset=iso8859-1,shortname=lower,errors=remount-ro
+22467 22389 254:21 / /vendor_dlkm ro,relatime master:30 - erofs /dev/block/dm-21 ro,seclabel,user_xattr,acl,cache_strategy=readaround
+22468 22389 254:22 / /system_dlkm ro,relatime master:31 - erofs /dev/block/dm-22 ro,seclabel,user_xattr,acl,cache_strategy=readaround
+22469 22389 254:23 / /odm ro,relatime master:32 - erofs /dev/block/dm-23 ro,seclabel,user_xattr,acl,cache_strategy=readaround
+22470 22389 0:22 / /apex rw,nosuid,nodev,noexec,relatime - tmpfs tmpfs rw,seclabel,size=5723612k,nr_inodes=1430903,mode=755
+22471 22470 7:40 / /apex/com.android.appsearch@352090000 ro,nodev,noatime - ext4 /dev/block/loop5 ro,dirsync,seclabel
+22472 22470 7:40 / /apex/com.android.appsearch ro,nodev,noatime - ext4 /dev/block/loop5 ro,dirsync,seclabel
+22473 22470 7:96 / /apex/com.android.permission@352090000 ro,nodev,noatime - ext4 /dev/block/loop12 ro,dirsync,seclabel
+22474 22470 7:144 / /apex/com.android.devicelock@1 ro,nodev,noatime - ext4 /dev/block/loop18 ro,dirsync,seclabel
+22475 22470 7:48 / /apex/com.android.apex.cts.shim@1 ro,nodev,noatime - ext4 /dev/block/loop6 ro,dirsync,seclabel
+22476 22470 7:80 / /apex/com.android.extservices@352090000 ro,nodev,noatime - ext4 /dev/block/loop10 ro,dirsync,seclabel
+22477 22470 7:112 / /apex/com.android.conscrypt@352090000 ro,nodev,noatime - ext4 /dev/block/loop14 ro,dirsync,seclabel
+22478 22470 7:104 / /apex/com.android.compos@2 ro,nodev,noatime - ext4 /dev/block/loop13 ro,dirsync,seclabel
+22479 22470 7:160 / /apex/com.android.healthfitness@352090000 ro,nodev,noatime - ext4 /dev/block/loop20 ro,dirsync,seclabel
+22480 22470 7:152 / /apex/com.android.i18n@1 ro,nodev,noatime - ext4 /dev/block/loop19 ro,dirsync,seclabel
+22481 22470 7:88 / /apex/com.android.uwb@352090000 ro,nodev,noatime - ext4 /dev/block/loop11 ro,dirsync,seclabel
+22482 22470 7:144 / /apex/com.android.devicelock ro,nodev,noatime - ext4 /dev/block/loop18 ro,dirsync,seclabel
+22483 22470 7:96 / /apex/com.android.permission ro,nodev,noatime - ext4 /dev/block/loop12 ro,dirsync,seclabel
+22484 22470 7:88 / /apex/com.android.uwb ro,nodev,noatime - ext4 /dev/block/loop11 ro,dirsync,seclabel
+22485 22470 7:160 / /apex/com.android.healthfitness ro,nodev,noatime - ext4 /dev/block/loop20 ro,dirsync,seclabel
+22486 22470 7:72 / /apex/com.android.vndk.v34@1 ro,nodev,noatime - ext4 /dev/block/loop9 ro,dirsync,seclabel
+22487 22470 7:152 / /apex/com.android.i18n ro,nodev,noatime - ext4 /dev/block/loop19 ro,dirsync,seclabel
+22488 22470 7:72 / /apex/com.android.vndk.v34 ro,nodev,noatime - ext4 /dev/block/loop9 ro,dirsync,seclabel
+22489 22470 7:104 / /apex/com.android.compos ro,nodev,noatime - ext4 /dev/block/loop13 ro,dirsync,seclabel
+22490 22470 7:112 / /apex/com.android.conscrypt ro,nodev,noatime - ext4 /dev/block/loop14 ro,dirsync,seclabel
+22491 22470 7:64 / /apex/com.android.tethering@352090000 ro,nodev,noatime - ext4 /dev/block/loop8 ro,dirsync,seclabel
+22492 22470 7:128 / /apex/com.android.tzdata@352090000 ro,nodev,noatime - ext4 /dev/block/loop16 ro,dirsync,seclabel
+22493 22470 7:80 / /apex/com.android.extservices ro,nodev,noatime - ext4 /dev/block/loop10 ro,dirsync,seclabel
+22494 22470 7:128 / /apex/com.android.tzdata ro,nodev,noatime - ext4 /dev/block/loop16 ro,dirsync,seclabel
+22495 22470 7:120 / /apex/com.android.configinfrastructure@352090000 ro,nodev,noatime - ext4 /dev/block/loop15 ro,dirsync,seclabel
+22496 22470 7:48 / /apex/com.android.apex.cts.shim ro,nodev,noatime - ext4 /dev/block/loop6 ro,dirsync,seclabel
+22497 22470 7:64 / /apex/com.android.tethering ro,nodev,noatime - ext4 /dev/block/loop8 ro,dirsync,seclabel
+22498 22470 7:56 / /apex/com.android.ondevicepersonalization@352090000 ro,nodev,noatime - ext4 /dev/block/loop7 ro,dirsync,seclabel
+22499 22470 7:120 / /apex/com.android.configinfrastructure ro,nodev,noatime - ext4 /dev/block/loop15 ro,dirsync,seclabel
+22500 22470 7:56 / /apex/com.android.ondevicepersonalization ro,nodev,noatime - ext4 /dev/block/loop7 ro,dirsync,seclabel
+22501 22470 7:168 / /apex/com.android.ipsec@352090000 ro,nodev,noatime - ext4 /dev/block/loop21 ro,dirsync,seclabel
+22502 22470 7:168 / /apex/com.android.ipsec ro,nodev,noatime - ext4 /dev/block/loop21 ro,dirsync,seclabel
+22503 22470 7:136 / /apex/com.android.adservices@352090000 ro,nodev,noatime - ext4 /dev/block/loop17 ro,dirsync,seclabel
+22504 22470 7:240 / /apex/com.android.os.statsd@352090000 ro,nodev,noatime - ext4 /dev/block/loop30 ro,dirsync,seclabel
+22505 22470 7:216 / /apex/com.google.android.widevine@341310000 ro,nodev,noatime - ext4 /dev/block/loop27 ro,dirsync,seclabel
+22506 22470 7:224 / /apex/com.android.media@352090000 ro,nodev,noatime - ext4 /dev/block/loop28 ro,dirsync,seclabel
+22507 22470 7:240 / /apex/com.android.os.statsd ro,nodev,noatime - ext4 /dev/block/loop30 ro,dirsync,seclabel
+22508 22470 7:216 / /apex/com.google.android.widevine ro,nodev,noatime - ext4 /dev/block/loop27 ro,dirsync,seclabel
+22509 22470 7:136 / /apex/com.android.adservices ro,nodev,noatime - ext4 /dev/block/loop17 ro,dirsync,seclabel
+22510 22470 7:224 / /apex/com.android.media ro,nodev,noatime - ext4 /dev/block/loop28 ro,dirsync,seclabel
+22511 22470 7:280 / /apex/com.android.scheduling@352090000 ro,nodev,noatime - ext4 /dev/block/loop35 ro,dirsync,seclabel
+22512 22470 7:232 / /apex/com.android.rkpd@352090000 ro,nodev,noatime - ext4 /dev/block/loop29 ro,dirsync,seclabel
+22513 22470 7:184 / /apex/com.android.media.swcodec@352090000 ro,nodev,noatime - ext4 /dev/block/loop23 ro,dirsync,seclabel
+22514 22470 7:280 / /apex/com.android.scheduling ro,nodev,noatime - ext4 /dev/block/loop35 ro,dirsync,seclabel
+22515 22470 7:208 / /apex/com.android.nfcservices@352090000 ro,nodev,noatime - ext4 /dev/block/loop26 ro,dirsync,seclabel
+22516 22470 7:296 / /apex/com.android.mediaprovider@352090000 ro,nodev,noatime - ext4 /dev/block/loop37 ro,dirsync,seclabel
+22517 22470 7:264 / /apex/com.android.runtime@1 ro,nodev,noatime - ext4 /dev/block/loop33 ro,dirsync,seclabel
+22518 22470 7:192 / /apex/com.android.cellbroadcast@352090000 ro,nodev,noatime - ext4 /dev/block/loop24 ro,dirsync,seclabel
+22519 22470 7:232 / /apex/com.android.rkpd ro,nodev,noatime - ext4 /dev/block/loop29 ro,dirsync,seclabel
+22520 22470 7:208 / /apex/com.android.nfcservices ro,nodev,noatime - ext4 /dev/block/loop26 ro,dirsync,seclabel
+22521 22470 7:256 / /apex/com.android.resolv@352090000 ro,nodev,noatime - ext4 /dev/block/loop32 ro,dirsync,seclabel
+22522 22470 7:184 / /apex/com.android.media.swcodec ro,nodev,noatime - ext4 /dev/block/loop23 ro,dirsync,seclabel
+22523 22470 7:176 / /apex/com.android.adbd@352090000 ro,nodev,noatime - ext4 /dev/block/loop22 ro,dirsync,seclabel
+22524 22470 7:296 / /apex/com.android.mediaprovider ro,nodev,noatime - ext4 /dev/block/loop37 ro,dirsync,seclabel
+22525 22470 7:312 / /apex/com.android.profiling@352090000 ro,nodev,noatime - ext4 /dev/block/loop39 ro,dirsync,seclabel
+22526 22470 7:248 / /apex/com.android.sdkext@352090000 ro,nodev,noatime - ext4 /dev/block/loop31 ro,dirsync,seclabel
+22527 22470 7:192 / /apex/com.android.cellbroadcast ro,nodev,noatime - ext4 /dev/block/loop24 ro,dirsync,seclabel
+22528 22470 7:200 / /apex/com.android.neuralnetworks@352090000 ro,nodev,noatime - ext4 /dev/block/loop25 ro,dirsync,seclabel
+22529 22470 7:272 / /apex/com.android.virt@2 ro,nodev,noatime - ext4 /dev/block/loop34 ro,dirsync,seclabel
+22530 22470 7:312 / /apex/com.android.profiling ro,nodev,noatime - ext4 /dev/block/loop39 ro,dirsync,seclabel
+22531 22470 7:256 / /apex/com.android.resolv ro,nodev,noatime - ext4 /dev/block/loop32 ro,dirsync,seclabel
+22532 22470 7:264 / /apex/com.android.runtime ro,nodev,noatime - ext4 /dev/block/loop33 ro,dirsync,seclabel
+22533 22470 7:288 / /apex/com.android.wifi@352090000 ro,nodev,noatime - ext4 /dev/block/loop36 ro,dirsync,seclabel
+22534 22470 7:304 / /apex/com.android.art@352090000 ro,nodev,noatime - ext4 /dev/block/loop38 ro,dirsync,seclabel
+22535 22470 7:248 / /apex/com.android.sdkext ro,nodev,noatime - ext4 /dev/block/loop31 ro,dirsync,seclabel
+22536 22470 7:200 / /apex/com.android.neuralnetworks ro,nodev,noatime - ext4 /dev/block/loop25 ro,dirsync,seclabel
+22537 22470 7:176 / /apex/com.android.adbd ro,nodev,noatime - ext4 /dev/block/loop22 ro,dirsync,seclabel
+22538 22470 7:272 / /apex/com.android.virt ro,nodev,noatime - ext4 /dev/block/loop34 ro,dirsync,seclabel
+22539 22470 7:288 / /apex/com.android.wifi ro,nodev,noatime - ext4 /dev/block/loop36 ro,dirsync,seclabel
+22540 22470 7:304 / /apex/com.android.art ro,nodev,noatime - ext4 /dev/block/loop38 ro,dirsync,seclabel
+22541 22470 0:22 /.default-apex-info-list.xml /apex/apex-info-list.xml rw,nosuid,nodev,noexec,relatime - tmpfs tmpfs rw,seclabel,size=5723612k,nr_inodes=1430903,mode=755
+22542 22389 0:23 / /bootstrap-apex rw,nosuid,nodev,noexec,relatime master:34 - tmpfs tmpfs rw,seclabel,size=5723612k,nr_inodes=1430903,mode=755
+22543 22542 7:16 / /bootstrap-apex/com.android.i18n@1 ro,nodev,noatime master:41 - ext4 /dev/block/loop2 ro,dirsync,seclabel
+22544 22542 7:0 / /bootstrap-apex/com.android.runtime@1 ro,nodev,noatime master:42 - ext4 /dev/block/loop0 ro,dirsync,seclabel
+22545 22542 7:8 / /bootstrap-apex/com.android.tzdata@352090000 ro,nodev,noatime master:43 - ext4 /dev/block/loop1 ro,dirsync,seclabel
+22546 22542 7:0 / /bootstrap-apex/com.android.runtime ro,nodev,noatime master:42 - ext4 /dev/block/loop0 ro,dirsync,seclabel
+22547 22542 7:8 / /bootstrap-apex/com.android.tzdata ro,nodev,noatime master:43 - ext4 /dev/block/loop1 ro,dirsync,seclabel
+22548 22542 7:16 / /bootstrap-apex/com.android.i18n ro,nodev,noatime master:41 - ext4 /dev/block/loop2 ro,dirsync,seclabel
+22549 22542 7:24 / /bootstrap-apex/com.android.vndk.v34@1 ro,nodev,noatime master:44 - ext4 /dev/block/loop3 ro,dirsync,seclabel
+22550 22542 7:24 / /bootstrap-apex/com.android.vndk.v34 ro,nodev,noatime master:44 - ext4 /dev/block/loop3 ro,dirsync,seclabel
+22551 22542 0:23 /.bootstrap-apex-info-list.xml /bootstrap-apex/apex-info-list.xml rw,nosuid,nodev,noexec,relatime master:34 - tmpfs tmpfs rw,seclabel,size=5723612k,nr_inodes=1430903,mode=755
+22552 22389 0:24 / /linkerconfig rw,nosuid,nodev,noexec,relatime - tmpfs tmpfs rw,seclabel,size=5723612k,nr_inodes=1430903,mode=755
+22553 22552 0:24 /default /linkerconfig rw,nosuid,nodev,noexec,relatime - tmpfs tmpfs rw,seclabel,size=5723612k,nr_inodes=1430903,mode=755
+22554 22389 0:81 / /tmp rw,relatime master:46 - tmpfs tmpfs rw,seclabel,size=5723612k,nr_inodes=1430903
+22555 22389 0:16 / /config rw,nosuid,nodev,noexec,relatime master:47 - configfs none rw
+22556 22389 254:24 / /my_product ro,relatime master:9 - erofs /dev/block/dm-24 ro,seclabel,user_xattr,acl,cache_strategy=readaround
+22557 22389 254:25 / /my_engineering ro,relatime master:10 - erofs /dev/block/dm-25 ro,seclabel,user_xattr,acl,cache_strategy=readaround
+22558 22389 254:26 / /my_company ro,relatime master:11 - erofs /dev/block/dm-26 ro,seclabel,user_xattr,acl,cache_strategy=readaround
+22559 22389 254:27 / /my_carrier ro,relatime master:12 - erofs /dev/block/dm-27 ro,seclabel,user_xattr,acl,cache_strategy=readaround
+22560 22389 254:28 / /my_region ro,relatime master:13 - erofs /dev/block/dm-28 ro,seclabel,user_xattr,acl,cache_strategy=readaround
+22561 22389 254:29 / /my_heytap ro,relatime master:14 - erofs /dev/block/dm-29 ro,seclabel,user_xattr,acl,cache_strategy=readaround
+22562 22389 254:30 / /my_stock ro,relatime master:15 - erofs /dev/block/dm-30 ro,seclabel,user_xattr,acl,cache_strategy=readaround
+22563 22562 0:105 / /my_stock/etc/Omoji ro,noatime master:70 - overlay overlay ro,seclabel,lowerdir=/mnt/opex/com.oplus.Omoji@15000035/etc/Omoji:/my_stock/etc/Omoji,override_creds=off
+22564 22389 254:31 / /my_preload ro,relatime master:16 - erofs /dev/block/dm-31 ro,seclabel,user_xattr,acl,cache_strategy=readaround
+22565 22389 254:32 / /my_bigball ro,relatime master:17 - erofs /dev/block/dm-32 ro,seclabel,user_xattr,acl,cache_strategy=readaround
+22566 22389 254:33 / /my_manifest ro,relatime master:18 - erofs /dev/block/dm-33 ro,seclabel,user_xattr,acl,cache_strategy=readaround
+22567 22389 254:69 / /data rw,nosuid,nodev,noatime master:58 - f2fs /dev/block/dm-69 rw,lazytime,seclabel,background_gc=on,nogc_merge,discard,discard_unit=block,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint_merge,fsync_mode=nobarrier,compress_algorithm=lz4,compress_log_size=2,compress_mode=user,memory=normal
+22568 22567 254:69 /data /data/user/0 rw,nosuid,nodev,noatime master:58 - f2fs /dev/block/dm-69 rw,lazytime,seclabel,background_gc=on,nogc_merge,discard,discard_unit=block,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint_merge,fsync_mode=nobarrier,compress_algorithm=lz4,compress_log_size=2,compress_mode=user,memory=normal
+22569 22567 8:83 /media/log/shutdown /data/persist_log/oplusreserve/media/log/shutdown rw,nosuid,nodev,noatime master:8 - ext4 /dev/block/by-name/oplusreserve2 rw,seclabel
+22570 22567 8:83 /media/log/hang_oplus /data/persist_log/oplusreserve/media/log/hang_oplus rw,nosuid,nodev,noatime master:8 - ext4 /dev/block/by-name/oplusreserve2 rw,seclabel
+22571 22567 8:83 /factory /data/persist_log/cache/factory rw,nosuid,nodev,noatime master:8 - ext4 /dev/block/by-name/oplusreserve2 rw,seclabel
+22572 22567 8:83 /oplus_fsck_fulldiskscanuserdata /data/persist_log/oplus_fsck_fulldiskscanuserdata rw,nosuid,nodev,noatime master:8 - ext4 /dev/block/by-name/oplusreserve2 rw,seclabel
+22573 22567 8:83 /media/log/criticalLog /data/persist_log/criticallog rw,nosuid,nodev,noatime master:8 - ext4 /dev/block/by-name/oplusreserve2 rw,seclabel
+22574 22567 8:83 /media/log/minidump /data/persist_log/oplusreserve/media/log/minidumpbackup rw,nosuid,nodev,noatime master:8 - ext4 /dev/block/by-name/oplusreserve2 rw,seclabel
+22575 22567 8:83 /media/log/vold /data/persist_log/storage/op2storagelog rw,nosuid,nodev,noatime master:8 - ext4 /dev/block/by-name/oplusreserve2 rw,seclabel
+22576 22389 0:88 / /data_mirror rw,nosuid,nodev,noexec,relatime master:60 - tmpfs tmpfs rw,seclabel,size=5723612k,nr_inodes=1430903,mode=700,gid=1000
+22577 22576 254:69 /user /data_mirror/data_ce/null rw,nosuid,nodev,noatime master:58 - f2fs /dev/block/dm-69 rw,lazytime,seclabel,background_gc=on,nogc_merge,discard,discard_unit=block,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint_merge,fsync_mode=nobarrier,compress_algorithm=lz4,compress_log_size=2,compress_mode=user,memory=normal
+22578 22577 254:69 /data /data_mirror/data_ce/null/0 rw,nosuid,nodev,noatime master:58 - f2fs /dev/block/dm-69 rw,lazytime,seclabel,background_gc=on,nogc_merge,discard,discard_unit=block,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint_merge,fsync_mode=nobarrier,compress_algorithm=lz4,compress_log_size=2,compress_mode=user,memory=normal
+22579 22576 254:69 /user_de /data_mirror/data_de/null rw,nosuid,nodev,noatime master:58 - f2fs /dev/block/dm-69 rw,lazytime,seclabel,background_gc=on,nogc_merge,discard,discard_unit=block,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint_merge,fsync_mode=nobarrier,compress_algorithm=lz4,compress_log_size=2,compress_mode=user,memory=normal
+22580 22576 254:69 /misc_ce /data_mirror/misc_ce/null rw,nosuid,nodev,noatime master:58 - f2fs /dev/block/dm-69 rw,lazytime,seclabel,background_gc=on,nogc_merge,discard,discard_unit=block,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint_merge,fsync_mode=nobarrier,compress_algorithm=lz4,compress_log_size=2,compress_mode=user,memory=normal
+22581 22576 254:69 /misc_de /data_mirror/misc_de/null rw,nosuid,nodev,noatime master:58 - f2fs /dev/block/dm-69 rw,lazytime,seclabel,background_gc=on,nogc_merge,discard,discard_unit=block,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint_merge,fsync_mode=nobarrier,compress_algorithm=lz4,compress_log_size=2,compress_mode=user,memory=normal
+22582 22576 254:69 /storage_area /data_mirror/storage_area rw,nosuid,nodev,noatime master:58 - f2fs /dev/block/dm-69 rw,lazytime,seclabel,background_gc=on,nogc_merge,discard,discard_unit=block,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint_merge,fsync_mode=nobarrier,compress_algorithm=lz4,compress_log_size=2,compress_mode=user,memory=normal
+22583 22576 254:69 /misc/profiles/cur /data_mirror/cur_profiles rw,nosuid,nodev,noatime master:58 - f2fs /dev/block/dm-69 rw,lazytime,seclabel,background_gc=on,nogc_merge,discard,discard_unit=block,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint_merge,fsync_mode=nobarrier,compress_algorithm=lz4,compress_log_size=2,compress_mode=user,memory=normal
+22584 22576 254:69 /misc/profiles/ref /data_mirror/ref_profiles rw,nosuid,nodev,noatime master:58 - f2fs /dev/block/dm-69 rw,lazytime,seclabel,background_gc=on,nogc_merge,discard,discard_unit=block,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint_merge,fsync_mode=nobarrier,compress_algorithm=lz4,compress_log_size=2,compress_mode=user,memory=normal
+22586 22389 0:21 /user/0 /storage rw,nosuid,nodev,noexec,relatime master:7 - tmpfs tmpfs rw,seclabel,size=5723612k,nr_inodes=1430903,mode=755,gid=1000
+22587 22586 0:222 / /storage/emulated rw,nosuid,nodev,noexec,noatime master:87 - fuse /dev/fuse rw,lazytime,user_id=0,group_id=0,allow_other
+22588 22567 0:503 / /data/data rw,nosuid,nodev,noexec,relatime - tmpfs tmpfs rw,seclabel,mode=751
+22589 22567 0:504 / /data/user rw,nosuid,nodev,noexec,relatime - tmpfs tmpfs rw,seclabel,mode=751
+22590 22567 0:505 / /data/user_de rw,nosuid,nodev,noexec,relatime - tmpfs tmpfs rw,seclabel,mode=751
+22591 22590 254:69 /user_de/0/com.coloros.alarmclock /data/user_de/0/com.coloros.alarmclock rw,nosuid,nodev,noatime master:58 - f2fs /dev/block/dm-69 rw,lazytime,seclabel,background_gc=on,nogc_merge,discard,discard_unit=block,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint_merge,fsync_mode=nobarrier,compress_algorithm=lz4,compress_log_size=2,compress_mode=user,memory=normal
+22592 22588 254:69 /data/com.coloros.alarmclock /data/data/com.coloros.alarmclock rw,nosuid,nodev,noatime master:58 - f2fs /dev/block/dm-69 rw,lazytime,seclabel,background_gc=on,nogc_merge,discard,discard_unit=block,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint_merge,fsync_mode=nobarrier,compress_algorithm=lz4,compress_log_size=2,compress_mode=user,memory=normal
+22593 22590 254:69 /user_de/0/com.google.android.gms /data/user_de/0/com.google.android.gms rw,nosuid,nodev,noatime master:58 - f2fs /dev/block/dm-69 rw,lazytime,seclabel,background_gc=on,nogc_merge,discard,discard_unit=block,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint_merge,fsync_mode=nobarrier,compress_algorithm=lz4,compress_log_size=2,compress_mode=user,memory=normal
+22594 22588 254:69 /data/com.google.android.gms /data/data/com.google.android.gms rw,nosuid,nodev,noatime master:58 - f2fs /dev/block/dm-69 rw,lazytime,seclabel,background_gc=on,nogc_merge,discard,discard_unit=block,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint_merge,fsync_mode=nobarrier,compress_algorithm=lz4,compress_log_size=2,compress_mode=user,memory=normal
+22595 22567 0:506 / /data/misc/profiles/cur rw,nosuid,nodev,noexec,relatime - tmpfs tmpfs rw,seclabel,mode=751
+22596 22567 0:507 / /data/misc/profiles/ref rw,nosuid,nodev,noexec,relatime - tmpfs tmpfs rw,seclabel,mode=751
+22597 22595 254:69 /misc/profiles/cur/0/com.coloros.alarmclock /data/misc/profiles/cur/0/com.coloros.alarmclock rw,nosuid,nodev,noatime master:58 - f2fs /dev/block/dm-69 rw,lazytime,seclabel,background_gc=on,nogc_merge,discard,discard_unit=block,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint_merge,fsync_mode=nobarrier,compress_algorithm=lz4,compress_log_size=2,compress_mode=user,memory=normal
+22599 22596 254:69 /misc/profiles/ref/com.coloros.alarmclock /data/misc/profiles/ref/com.coloros.alarmclock rw,nosuid,nodev,noatime master:58 - f2fs /dev/block/dm-69 rw,lazytime,seclabel,background_gc=on,nogc_merge,discard,discard_unit=block,user_xattr,inline_xattr,acl,inline_data,inline_dentry,flush_merge,barrier,extent_cache,mode=adaptive,active_logs=6,reserve_root=32768,resuid=0,resgid=1065,inlinecrypt,alloc_mode=default,checkpoint_merge,fsync_mode=nobarrier,compress_algorithm=lz4,compress_log_size=2,compress_mode=user,memory=normal

@@ -1,0 +1,128 @@
+Beginning of dump -- C2ComponentStore: qti.c2.store
+
+  Supported components:
+
+    name: c2.qti.alac.sw.decoder
+    domain: 2
+    kind: 1
+    rank: 256
+    mediaType: audio/alac
+    aliases:
+
+    name: c2.qti.ape.sw.decoder
+    domain: 2
+    kind: 1
+    rank: 256
+    mediaType: audio/x-ape
+    aliases:
+
+    name: c2.qti.evrc.sw.decoder
+    domain: 2
+    kind: 1
+    rank: 256
+    mediaType: audio/evrc
+    aliases:
+
+    name: c2.qti.qcelp.sw.decoder
+    domain: 2
+    kind: 1
+    rank: 256
+    mediaType: audio/qcelp
+    aliases:
+
+    name: c2.qti.flac.sw.decoder
+    domain: 2
+    kind: 1
+    rank: 256
+    mediaType: audio/flac
+    aliases:
+
+    name: c2.qti.dsd.sw.decoder
+    domain: 2
+    kind: 1
+    rank: 256
+    mediaType: audio/dsd
+    aliases:
+
+    name: c2.qti.aac.hw.decoder
+    domain: 2
+    kind: 1
+    rank: 256
+    mediaType: audio/mp4a-latm
+    aliases:
+
+    name: c2.qti.aac.hw.decoder
+    domain: 2
+    kind: 1
+    rank: 256
+    mediaType: audio/mp4a-latm
+    aliases:
+
+    name: c2.qti.alac.hw.decoder
+    domain: 2
+    kind: 1
+    rank: 256
+    mediaType: audio/alac
+    aliases:
+
+    name: c2.qti.amrwbplus.hw.decoder
+    domain: 2
+    kind: 1
+    rank: 256
+    mediaType: audio/amr-wb-plus
+    aliases:
+
+    name: c2.qti.amrwb+.hw.decoder
+    domain: 2
+    kind: 1
+    rank: 256
+    mediaType: audio/amr-wb+
+    aliases:
+
+    name: c2.qti.ape.hw.decoder
+    domain: 2
+    kind: 1
+    rank: 256
+    mediaType: audio/x-ape
+    aliases:
+
+    name: c2.qti.wma.hw.decoder
+    domain: 2
+    kind: 1
+    rank: 256
+    mediaType: audio/x-ms-wma
+    aliases:
+
+    name: c2.qti.aac.hw.encoder
+    domain: 2
+    kind: 2
+    rank: 256
+    mediaType: audio/mp4a-latm
+    aliases:
+
+    name: c2.qti.aac.hw.encoder
+    domain: 2
+    kind: 2
+    rank: 256
+    mediaType: audio/mp4a-latm
+    aliases:
+
+    name: c2.qti.amrnb.hw.encoder
+    domain: 2
+    kind: 2
+    rank: 256
+    mediaType: audio/3gpp
+    aliases:
+
+    name: c2.qti.amrwb.hw.encoder
+    domain: 2
+    kind: 2
+    rank: 256
+    mediaType: audio/amr-wb
+    aliases:
+
+  Active components:
+
+    NONE
+
+End of dump -- C2ComponentStore: qti.c2.store
