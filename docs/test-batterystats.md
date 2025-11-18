@@ -12,14 +12,12 @@ adb pull phonepath hostpath
 ```
 
 ## 测量模型
-有两种测量策略：基于预设模型的测量, 基于硬件抽象层基于硬件电气参数的测量。
+有三种测量策略：基于预设模型的测量, 基于硬件抽象层, 基于电池电气参数的测量。
 
 基于预设模型的测量是厂商对所有硬件预先测定好一个每小时耗电量值，该文件称为power_profile.xml，使用dumpsys batterystats测量的是各个硬件活动时间。计算`时间 *  耗电率 = 耗电量`
 
 - 占位符：/system/framework/framework-res.apk/res/xml/power_profile.xml
 - 实际参数：/system/vender/overlay/FrameworksResTarget_Vendor.apk/res/xml/power_profile.xml
-
-基于硬件电气参数的测量 TODO
 
 
 ## 基于预设模型的测量
@@ -42,6 +40,23 @@ adb shell dumpsys batterystats > batterystats$(date +%m%d%H%M)-screen-full-60min
 
 # 转储程序可读数据
 adb bugreport > bugreport$(date +%m%d%H%M)-screen-full-60min.zip
+# 或者?
+#adb bugreport bugreport$(date +%m%d%H%M)-screen-full-60min.zip
+```
+
+## 基于hal硬件抽象层
+oneplus没有实现IPowerStats.hal, 无法读取片上功耗
+```sh
+su
+lshal | grep power
+lshal | grep stats
+```
+
+# 基于电池电气参数的测量
+只能读取一个总的电流电压
+```sh
+# 电流 单位疑似是mA 正值是耗电
+su -c "cat /sys/class/power_supply/battery/current_now"
 ```
 
 ## 可视化batterystats.txt
