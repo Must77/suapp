@@ -25,11 +25,11 @@
   - 合法值: `"30"` / `"60"` / `"90"` / `"120"`
   - 备注: 显示帧率与具体App有关, 仍需详细测量
 
-- TODO: 切换自动亮度 [待测试]
+- 切换自动亮度
   - 命令: `su -c settings put system screen_brightness_mode <0|1>`
-  - 函数: `Executor.switchAutoBrightness(context, order: String)`
+  - ~~函数: `Executor.switchAutoBrightness(context, order: String)`~~
   - 合法值: `"0"` / `"1"`
-  - 说明: 开启自动亮度可根据光感器动态节电；关闭可配合固定亮度更稳定节电。 [待测试]
+  - 说明: 开启自动亮度可根据光感器动态节电；关闭可配合固定亮度更稳定节电。
 
 - TODO: 切换 Doze / 常亮显示 (AOD) [待测试]
   - 命令:
@@ -60,17 +60,11 @@
   - 函数: `Executor.switchData(context, order: String)`
   - 合法值: `"enable"` / `"disable"`
 
-- TODO: 关闭/开启 Wi‑Fi 后台扫描 [待测试]
+- 关闭/开启 Wi‑Fi 后台扫描
   - 命令: `su -c settings put global wifi_scan_always_enabled <0|1>`
-  - 函数: `Executor.switchWifiScanAlwaysEnabled(context, enabled: Int)`
+  - ~~函数: `Executor.switchWifiScanAlwaysEnabled(context, enabled: Int)`~~
   - 合法值: `0` / `1`
-  - 说明: 关闭后可防止频繁唤醒与扫描，节省无线功耗和 CPU 唤醒。 [待测试]
-
-- TODO: 关闭/开启 BLE 后台扫描 [待测试]
-  - 命令: `su -c settings put global ble_scan_always_enabled <0|1>`
-  - 函数: `Executor.switchBleScanAlwaysEnabled(context, enabled: Int)`
-  - 合法值: `0` / `1`
-  - 说明: 在不需要 BLE 广播/扫描时关闭可节省少量功耗；可能与蓝牙芯片和 ROM 有关。 [待测试]
+  - 说明: 关闭后可防止频繁唤醒与扫描，节省无线功耗和 CPU 唤醒。
 
 - TODO: 禁用 A2DP（经典蓝牙音频）保留 BLE [待测试]
   - 命令(示例): `su -c service call bluetooth_manager 8 i32 0`  // 需要校验具体设备接口
@@ -92,11 +86,6 @@
   - **不可用**: 需要读高通开发手册
   - 命令: `su -c settings put global gnss_measurement_rate <millis>`
   - 函数: `Executor.setGnssRate(context, millis: Int)`
-
-- TODO: 临时禁用 GPS Provider / 降低定位频率 [待测试]
-  - 命令(示例): `su -c settings put secure location_providers_allowed -gps`
-  - 函数: `Executor.disableGpsProviders(context, provider: String)`
-  - 说明: 配合 `setGPSMode` 使用，短期内关闭可省去数百 mW。不同 Android 版本命令差异需要验证。 [待测试]
 
 ## 音量与音频
 - ~~切换静音~~
@@ -164,18 +153,10 @@
   - 说明: 最彻底但最具破坏性的方法，适用于测试/临时场景。 [待测试]
 
 ## 系统省电调用
-- TODO: 切换 Master Sync(主同步) 开关 [待测试]
-  - 命令: `su -c settings put global auto_sync <0|1>`
-  - 函数: `Executor.setMasterSync(context, enabled: Int)`
+- 切换省电模式 (Battery Saver)
+  - 命令: `su -c settings put global low_power <0|1>`
+  - ~~函数: `Executor.toggleBatterySaver(context, enabled: Int)`~~
   - 合法值: `0` / `1`
-  - 说明: 关闭同步可以减少后台网络和唤醒，影响同步体验。 [待测试]
-
-- TODO: 切换省电模式 (Battery Saver) [待测试]
-  - 命令(尝试): `su -c settings put global low_power <0|1>`
-  - 备选: `su -c cmd power set-mode <MODE>`  // 厂商差异
-  - 函数: `Executor.toggleBatterySaver(context, enabled: Int)`
-  - 合法值: `0` / `1`
-  - 说明: 会在系统级降低 CPU、限制后台和网络等多个子系统。 [待测试]
 
 - TODO: 强制设备进入 Doze (测试/短时省电) [待测试]
   - 命令: `su -c cmd deviceidle force-idle`
