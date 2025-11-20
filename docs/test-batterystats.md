@@ -1,3 +1,10 @@
+# 概述
+我们难以获取到手机中各个硬件的实时的电气参数, 因此无法基于电气参数来估计手机的可用时长. 取而代之的使用测量模型来估计耗电情况, 虽然存在一定误差, 但是如果误差稳定可以乘以一个误差系数得到相对精确的值, 如果误差不稳定的话, 也可以不将测量模型作为对未来估计的依据, 而是作为某个硬件耗电百分比(占手机整体)的参照, 反而是对过去状态的分析.
+
+想要通过大量实现测定power_profile.xml是不现实的, 当硬件组装在手机中时就不再能单独测定某个硬件的电气参数, 始终要根据一个baseline来测量变化值
+
+这样多次fall-back, 还有一条可行的方案, 读取电池的电气参数. 这些参数通常比较容易读取, 但是值得注意的问题时, 这些电气参数都是实时值, 而非累计值, 要将实时值转化为累计值或者其他类型的值, 需要经过一些数学运算, 比如 mAh = mA 在 T 上的积分. 这些数学运算容易出问题
+
 ## 远程adb连接
 ```sh
 adb pair 192.168.31.155:35435
@@ -16,9 +23,12 @@ adb pull phonepath hostpath
 
 基于预设模型的测量是厂商对所有硬件预先测定好一个每小时耗电量值，该文件称为power_profile.xml，使用dumpsys batterystats测量的是各个硬件活动时间。计算`时间 *  耗电率 = 耗电量`
 
-- 占位符：/system/framework/framework-res.apk/res/xml/power_profile.xml
-- 实际参数：/system/vender/overlay/FrameworksResTarget_Vendor.apk/res/xml/power_profile.xml
+    - 占位符：/system/framework/framework-res.apk/res/xml/power_profile.xml
+    - 实际参数：/system/vender/overlay/FrameworksResTarget_Vendor.apk/res/xml/power_profile.xml
 
+基于硬件抽象层的测量是AOSP提供了一些对硬件的抽象接口, 由手机厂家确定要不要实现这些接口. 而oneplus并未实现这个称为IPowerStats.hal的硬件抽象层, 根本原因可能是因为缺少硬件的片上传感器
+
+基于电池电气参数的测量是手机通常对电池的充放电的电气参数有传感器基础. 可以在文件系统中直接读取到实时的电气参数的值.
 
 ## 基于预设模型的测量
 ```sh
@@ -52,7 +62,7 @@ lshal | grep power
 lshal | grep stats
 ```
 
-# 基于电池电气参数的测量
+## 基于电池电气参数的测量
 只能读取一个总的电流电压
 ```sh
 # 电流 单位疑似是mA 正值是耗电
